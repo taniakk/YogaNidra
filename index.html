@@ -1,1497 +1,1760 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>YogaNidra.co.in – Holistic Yoga & Wellness</title>
-<meta name="description" content="YogaNidra.co.in by Rohini Sanjay Bapat – prenatal yoga, yoga nidra, ashtanga yoga, IAYT therapy for all groups.">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{purple:{DEFAULT:'#6C3FC5',light:'#9B72EF',dark:'#2d1854'},pink:{DEFAULT:'#E876A0',light:'#F4B8D0'},gold:'#D4A843'},fontFamily:{sans:['Poppins','sans-serif'],serif:['Playfair Display','serif']},animation:{float:'float 5s ease-in-out infinite','float-slow':'floatSlow 7s ease-in-out infinite','spin-slow':'spin 20s linear infinite','pulse-slow':'pulse 4s ease-in-out infinite'},keyframes:{float:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-14px)'}},floatSlow:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(12px)'}}}}}}
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YogaNidra Navbar</title>
 
-<style>
-body{font-family:'Poppins',sans-serif;overflow-x:hidden;}
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-thumb{background:#9B72EF;border-radius:10px}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.reveal.visible{opacity:1;transform:none}
-.tab-panel{display:none}
-.tab-panel.active{display:block}
-.aud-panel{display:none}
-.aud-panel.active{display:grid}
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-/* ── Mobile Responsive Fixes ── */
-@media (max-width: 767px) {
-  /* Hero heading */
-  #hero h1 { font-size: 2.4rem !important; line-height: 1.2 !important; }
-  #hero h1 span.text-4xl { font-size: 1.5rem !important; }
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
 
-  /* Hero stats */
-  #hero .flex.gap-12 { gap: 1rem !important; }
-  #hero [data-target] { font-size: 2rem !important; }
+        
+    </style>
 
-  /* Hero right image area — hide spinning ring & blobs, shrink image */
-  #hero .relative.flex.justify-center .absolute.w-\[480px\],
-  #hero .relative.flex.justify-center .absolute.w-\[380px\] { display: none !important; }
-  #hero img.w-\[400px\] { width: 260px !important; height: 260px !important; }
-
-  /* Hero floating badges — hide on mobile to prevent overflow */
-  #hero .absolute.top-12,
-  #hero .absolute.top-48,
-  #hero .absolute.bottom-12 { display: none !important; }
-
-  /* About floating badges — hide on mobile */
-  #about .absolute.top-8,
-  #about .absolute.top-40 { display: none !important; }
-
-  /* About image container */
-  #about .relative.z-10.w-\[380px\] { width: 100% !important; height: 300px !important; }
-  #about .absolute.w-\[420px\] { display: none !important; }
-
-  /* Navpalavi big heading */
-  #navpalavi h2.text-4xl { font-size: 2rem !important; }
-
-  /* Registration form */
-  #register .max-w-2xl { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
-
-  /* Footer grid */
-  footer .grid { gap: 2rem !important; }
+    <style>
+@keyframes floatBubble {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-18px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
+
+.bubble{
+    animation: floatBubble 6s ease-in-out infinite;
+}
+
+.bubble2{
+    animation: floatBubble 8s ease-in-out infinite;
+}
+
+.bubble3{
+    animation: floatBubble 10s ease-in-out infinite;
+}
+
+.bubble4{
+    animation: floatBubble 7s ease-in-out infinite;
+}
+
+.bubble5{
+    animation: floatBubble 9s ease-in-out infinite;
+}
+
+
 </style>
+
 </head>
-<body class="bg-[#FDF9FF] text-gray-700">
 
-<!-- NAVBAR -->
-<nav id="main-nav" class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-purple-100 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-5 h-[70px] flex items-center justify-between">
-    <a href="/index.html#hero"><img src="./images/logo.png" alt="YogaNidra Logo" class="h-14 lg:h-16 w-auto"></a>
-    <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-        <li><a href="/index.html#home" class="hover:text-[#6C3FC5] transition">Home</a></li>
-      <li><a href="/index.html#about" class="hover:text-[#6C3FC5] transition">About</a></li>
+<body class="min-h-screen ">
 
-      <li class="relative group">
 
-    <button
-        class="flex items-center gap-1 hover:text-[#6C3FC5] transition">
 
-        Yoga
+    <!-- ================= NAVBAR START ================= -->
+ <header id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-500 shadow-sm bg-[#D37198]">
 
-        <svg xmlns="http://www.w3.org/2000/svg"
-             class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7" />
+        <div class="flex items-center justify-between h-20">
 
-        </svg>
+            <!-- Logo -->
+            <a href="/" id="logo" class="text-3xl font-bold text-white transition duration-300">
+                YogaNidra
+            </a>
 
-    </button>
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center space-x-10">
 
-    <!-- Dropdown -->
+                <a href="#home" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_home">Home</span></a>
+                <a href="#about" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_about">About Us</span></a>
+                <a href="#women" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_women">Women Wellness</span></a>
+                <a href="#iayt" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_therapy">Yoga Therapy</span></a>
+                <a href="#groups" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_join">Who can join</span></a>
+                <a href="navpalavi.html" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_navpalavi">Navpalavi</span></a>
 
+                <!-- Language Switcher -->
+                <div id="lang-switcher-slot" class="nav-link "></div>
+
+                <!-- Contact CTA Button (Starts white with pink text) -->
+                <a href="/contact.html" id="contact-btn" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#D37198] bg-white hover:bg-purple-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
+                    <span data-lang="nav_contact">Contact Us</span>
+                </a>
+
+            </nav>
+
+            <!-- Mobile Toggle Button -->
+            <button id="menu-btn" class="lg:hidden flex flex-col justify-center items-center gap-1.5 focus:outline-none">
+                <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+
+        <nav class="flex flex-col px-6 py-6 space-y-5">
+
+            <a href="#home" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                Home
+            </a>
+
+            <a href="#about" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                About Us
+            </a>
+
+            <a href="#women" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                Women Wellness
+            </a>
+
+            <a href="#iayt" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                Yoga Therapy
+            </a>
+
+            <a href="#groups" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                Who can join
+            </a>
+
+            <a href="navpalavi.html" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
+                Navpalavi
+            </a>
+
+            <!-- Mobile Menu Contact Block Trigger -->
+            <a href="/contact.html" class="inline-flex items-center justify-center w-full px-5 py-3 rounded-2xl text-base font-semibold text-white bg-[#E876A0] hover:bg-[#D37198] transition-all duration-300 text-center">
+                Contact Us
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+    <!-- ================= NAVBAR END ================= -->
+
+<!-- Header section -->
+<section id="home" class="relative overflow-hidden h-screen min-h-[950px] flex items-center justify-center bg-[linear-gradient(to_bottom,#D37198_0%,#BD73A4_35%,#A276B3_70%,#8F78BC_100%)]">
+
+    <!-- Pink Arc -->
     <div
-        class="absolute left-0 top-full mt-3 w-64 bg-white rounded-2xl shadow-2xl border border-purple-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 overflow-hidden z-50">
+        class="absolute -top-[280px] left-1/2 -translate-x-1/2
+        w-[2000px] h-[700px]
+        rounded-full
+        border-[110px]
+        border-[#D37198]/15">
+    </div>
 
-        <a href="/index.html#yoga-basics"
-           class="block px-5 py-4 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5] transition">
+    <!-- Floating Circles -->
+  <div class="absolute top-6 left-20 w-3 h-3 rounded-full bg-white/20 bubble"></div>
 
-            📚 Yoga Basics
+<div class="absolute top-16 left-40 w-8 h-8 rounded-full bg-white/15 bubble2"></div>
 
-        </a>
+<div class="absolute top-4 left-1/4 w-12 h-12 rounded-full bg-white/10 bubble3"></div>
 
-        <a href="/index.html#yoga-nidra"
-           class="block px-5 py-4 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5] transition">
+<div class="absolute top-10 right-1/2 w-4 h-4 rounded-full bg-white/15 bubble4"></div>
 
-            🌙 Yoga Nidra
+<div class="absolute top-24 right-1/3 w-10 h-10 rounded-full bg-white/15 bubble5"></div>
 
-        </a>
+<div class="absolute top-40 right-60 w-3 h-3 rounded-full bg-white/20 bubble"></div>
 
-        <a href="#ashtang"
-           class="block px-5 py-4 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5] transition">
+<div class="absolute top-32 right-12 w-2 h-2 rounded-full bg-white/20 bubble2"></div>
 
-            🪷 Ashtanga Yoga
+<div class="absolute bottom-80 left-1/4 w-14 h-14 rounded-full bg-white/15 bubble3"></div>
 
-        </a>
+<div class="absolute bottom-64 left-[28%] w-20 h-20 rounded-full bg-white/10 bubble4"></div>
+
+<div class="absolute bottom-64 right-72 w-6 h-6 rounded-full bg-white/15 bubble5"></div>
+
+<div class="absolute bottom-72 right-4 w-20 h-20 rounded-full bg-white/15 bubble"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-20 w-full max-w-5xl mx-auto flex flex-col items-center justify-start text-center px-6 pt-10 pb-56 md:pb-72">
+
+       <h3 class="text-white text-3xl md:text-4xl font-light" data-lang="hero_subtitle">
+    YogaNidra
+</h3>
+
+<h1 class="mt-4 text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight max-w-4xl" data-lang="hero_title">
+    YogaNidra: A Sleep with Awareness
+</h1>
+
+<p class="mt-6 max-w-3xl text-lg md:text-xl leading-8 text-white/90" data-lang="hero_desc">
+    Our approach combines expertise, compassion, and a deep understanding of Yoga's transformative power. Join us as we embark on a journey of self-discovery, relaxation, and mindfulness together.
+</p>
 
     </div>
 
-</li>
-      <li><a href="#women" class="hover:text-[#6C3FC5] transition">Women's Wellness</a></li>
-      <li><a href="#groups" class="hover:text-[#6C3FC5] transition">Who can Join</a></li>
-      <li><a href="/navpalavi.html" class="hover:text-[#6C3FC5] transition">Navpalavi</a></li>
-      <li><a href="#iayt" class="hover:text-[#6C3FC5] transition">Yoga Therapy</a></li>
-    </ul>
-    <a href="/contact.html" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-transform shadow-lg shadow-purple-200"> Register Free</a>
-    <button onclick="toggleMenu()" class="md:hidden text-gray-700 p-2">
-      <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
+    <!-- Circle Image -->
+    <div
+        class="absolute left-1/2 -translate-x-1/2 -bottom-10 z-30 my-12">
+
+        <div
+            class="w-[320px] h-[320px] md:w-[400px] md:h-[400px]
+            rounded-full overflow-hidden
+            border-8 border-white shadow-2xl">
+
+            <img
+                src="/images/yoga1.webp"
+                class="w-full h-full object-cover">
+
+        </div>
+
+    </div>
+
+    <!-- Shadow Wave -->
+<!-- Main White Wave -->
+<svg
+    class="absolute bottom-[-1px] left-0 w-full block"
+    viewBox="0 0 1440 260"
+    preserveAspectRatio="none">
+
+    <path
+        fill="#ffffff"
+        d="
+        M0,70
+        C230,250
+        480,10
+        720,110
+        C980,230
+        1220,10
+        1440,160
+        L1440,260
+        L0,260
+        Z">
+    </path>
+
+</svg>
+
+    <!-- Main White Wave -->
+    <svg
+        class="absolute bottom-0 left-0 w-full"
+        viewBox="0 0 1440 260"
+        preserveAspectRatio="none">
+
+        <path
+            fill="#ffffff"
+            d="
+            M0,70
+            C230,250
+            480,10
+            720,110
+            C980,230
+            1220,10
+            1440,160
+            L1440,260
+            L0,260
+            Z">
+        </path>
+
+    </svg>
+
+</section>
+
+
+<!-- ABOUT & JOURNEY SECTION -->
+<section id="about" class="relative py-20 lg:py-28 overflow-hidden bg-white">
+  
+  <!-- Subtle Ambient Glows -->
+  <div class="absolute top-10 left-0 w-72 h-72 bg-[#FF8B7A]/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-10 right-0 w-96 h-96 bg-[#D37198]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <!-- Premium Frame Image Block (5 Columns on Large Screens) -->
+      <div class="relative lg:col-span-5 w-full max-w-md lg:max-w-none mx-auto group">
+        <!-- Elegant Offset Backframe -->
+        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-[#D37198]/30 rounded-[2rem] transition-transform duration-500 group-hover:-translate-x-2 group-hover:-translate-y-2"></div>
+        
+        <!-- Main Image Container -->
+        <div class="relative overflow-hidden rounded-[2rem] shadow-xl bg-gray-100 aspect-[4/5] lg:h-[580px]">
+          <img
+            src="images/aboutImage.png"
+            alt="Rohini Sanjay Bapat - Founder of YogaNidra"
+            class="w-full h-full object-cover object-center transform scale-100 group-hover:scale-105 transition-transform duration-700 ease-out">
+          <!-- Subtle Inner Vignette Gradient -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+        </div>
+      </div>
+
+      <!-- Text Content Block (7 Columns on Large Screens) -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        
+       
+        <div class="flex items-center justify-center lg:justify-start gap-3">
+          <div class="w-12 h-[2px] bg-[#FF8B7A] rounded-full"></div>
+          <span class="text-sm font-bold uppercase tracking-widest text-[#FF8B7A]">Our Story</span>
+        </div>
+
+        <!-- Section Title -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+          Welcome to Our <br class="hidden sm:inline"/>
+          <span class="bg-gradient-to-r from-[#D37198] to-[#FF8B7A] bg-clip-text text-transparent">Yoga Journey</span>
+        </h2>
+
+        <!-- Introduction Statement -->
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          Founded by <strong class="text-[#4A1525] font-semibold">Rohini Sanjay Bapat</strong>, our mission is to bring the profound benefits of Yoga to individuals seeking holistic wellness and balance. With a deep passion for Yoga and its therapeutic applications, Rohini has dedicated her life to helping others through this ancient science.
+        </p>
+
+        <!-- Credentials / Accreditations Sub-Grid -->
+        <div class="pt-4 pb-2">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">About the Founder</h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+            <!-- Credential item 1 -->
+            <div class="flex gap-3 items-start bg-gray-50 p-4 rounded-2xl border border-pink-100/30">
+              <span class="flex-shrink-0 text-xl">🎓</span>
+              <div>
+                <h4 class="text-sm font-bold text-gray-800">Advanced Academic Baseline</h4>
+                <p class="text-xs sm:text-sm text-gray-600 mt-0.5">Holds a Master's Degree in Yogashastra.</p>
+              </div>
+            </div>
+
+            <!-- Credential item 2 -->
+            <div class="flex gap-3 items-start bg-gray-50 p-4 rounded-2xl border border-pink-100/30">
+              <span class="flex-shrink-0 text-xl">📜</span>
+              <div>
+                <h4 class="text-sm font-bold text-gray-800">Therapeutic Yoga Consultant</h4>
+                <p class="text-xs sm:text-sm text-gray-600 mt-0.5">Accredited by YCB under the Ayush Department, Government of India.</p>
+              </div>
+            </div>
+
+            <!-- Credential item 3 -->
+            <div class="flex gap-3 items-start bg-gray-50 p-4 rounded-2xl border border-pink-100/30 sm:col-span-2">
+              <span class="flex-shrink-0 text-xl">🔍</span>
+              <div>
+                <h4 class="text-sm font-bold text-gray-800">Continuous Academic Research</h4>
+                <p class="text-xs sm:text-sm text-gray-600 mt-0.5">Currently pursuing a Ph.D. in Yogashastra and always an aspirant Yoga Sadhak, striving for personal and collective growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Closing Intent Statement -->
+        <div class="flex items-start gap-4 bg-gradient-to-r from-pink-50/50 to-orange-50/30 p-5 rounded-2xl border-l-4 border-[#D37198] text-left">
+          <span class="text-2xl flex-shrink-0 mt-0.5">🧘</span>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+            Our approach combines expertise, compassion, and a deep understanding of Yoga's transformative power. Join us as we embark on a journey of self-discovery, relaxation, and mindfulness together.
+          </p>
+        </div>
+
+       
+
+      </div>
+
+    </div>
   </div>
-
-  <!-- Mobile Menu -->
-<div id="mobile-menu"
-     class="hidden md:hidden bg-white border-t border-gray-100 px-5 pb-4 flex flex-col gap-1 text-sm font-medium">
-
-    <a href="#home"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        Home
-    </a>
-
-    <a href="#about"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        About
-    </a>
-
-    <!-- Yoga Dropdown -->
-   <div class="border-b border-gray-50">
-
-    <button
-        type="button"
-        onclick="toggleYogaDropdown()"
-        class="w-full flex items-center justify-between py-2.5 text-gray-700 hover:text-[#6C3FC5] transition">
-
-        <span>Yoga</span>
-
-        <svg id="yogaArrow"
-             xmlns="http://www.w3.org/2000/svg"
-             class="w-4 h-4 transition-transform duration-300"
-             fill="none"
-             viewBox="0 0 24 24"
-             stroke="currentColor">
-
-            <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"/>
-
-        </svg>
-
-    </button>
-
-    <!-- Dropdown -->
-    <div id="yogaDropdown" class="hidden bg-white rounded-xl border border-purple-100 shadow-lg overflow-hidden">
-
-        <a href="/index.html#yoga-basics"
-           onclick="toggleMenu()"
-           class="block px-5 py-3 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5]">
-            📚 Yoga Basics
-        </a>
-
-        <a href="/index.html#yoga-nidra"
-           onclick="toggleMenu()"
-           class="block px-5 py-3 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5]">
-            🌙 Yoga Nidra
-        </a>
-
-        <a href="#ashtang"
-           onclick="toggleMenu()"
-           class="block px-5 py-3 text-gray-700 hover:bg-purple-50 hover:text-[#6C3FC5]">
-            🪷 Ashtanga Yoga
-        </a>
-
-    </div>
-
-</div>
-
-    <a href="#women"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        Women's Wellness
-    </a>
-
-    <a href="#groups"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        Who can Join
-    </a>
-
-    <a href="/navpalavi.html"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        Navpalavi
-    </a>
-
-    <a href="#iayt"
-       onclick="toggleMenu()"
-       class="py-2.5 border-b border-gray-50 text-gray-700 hover:text-[#6C3FC5]">
-        Yoga Therapy
-    </a>
-
-    <a href="#register"
-       onclick="toggleMenu()"
-       class="mt-3 bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] text-white py-3 rounded-full text-center font-semibold">
-        Register Free
-    </a>
-
-</div>
-</nav>
-
-<!-- HERO -->
-<section id="hero" class="relative min-h-screen flex items-center pt-[68px] overflow-hidden bg-gradient-to-br from-[#FDF9FF] via-[#F6F1FF] to-[#FFF7FB]">
-
-    <!-- Background Blobs -->
-    <div class="absolute top-0 left-0 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-    <div class="absolute bottom-0 right-0 w-80 h-80 bg-pink-200/30 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-5 py-12 lg:py-20 w-full grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-        <!-- LEFT -->
-        <div>
-
-            <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-5 py-2 rounded-full text-xs sm:text-sm font-semibold mb-6">
-                🧘 Yoga • Yoga Nidra • Holistic Wellness
-            </span>
-
-            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight text-[#2d1854] mb-6">
-                YOGA<span class="bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] bg-clip-text text-transparent">NIDRA</span><br>
-
-                <span class="text-2xl sm:text-4xl lg:text-5xl font-bold">
-                    A Sleep
-                    <span class="bg-[#6C3FC5] text-white px-3 py-1 rounded-2xl inline-block -rotate-2">
-                        With
-                    </span>
-                    Awareness
-                </span>
-            </h1>
-
-            <div class="bg-white border-l-4 border-[#6C3FC5] shadow-md px-5 py-4 rounded-r-2xl mb-6">
-                <p class="italic font-semibold text-[#2d1854] leading-7">
-                    "यथाशक्ती निरंतर"
-                </p>
-
-                <p class="text-gray-500 text-sm mt-1">
-                    Practice according to your capacity, but remain consistent.
-                </p>
-            </div>
-
-            <p class="text-gray-600 leading-8 text-base md:text-lg max-w-xl mb-8">
-
-                Founded by
-                <strong class="text-[#2d1854]">
-                    Rohini Sanjay Bapat
-                </strong>
-
-                (M.A. Yogashastra, Certified Therapeutic Yoga Consultant – YCB, Ministry of AYUSH),
-
-                YogaNidra.co.in is a holistic educational and therapeutic platform dedicated to
-                <strong class="text-[#6C3FC5]">Women's Wellness</strong>,
-                <strong class="text-[#6C3FC5]">Yoga Therapy (IAYT)</strong>,
-                and
-                <strong class="text-[#6C3FC5]">healthy living for every stage of life.</strong>
-
-            </p>
-
-            <div class="flex flex-wrap gap-4">
-
-                <a href="#register"
-                   class="bg-gradient-to-r from-[#6C3FC5] to-[#E876A0]
-                          text-white
-                          px-8 py-4
-                          rounded-full
-                          font-semibold
-                          shadow-xl
-                          hover:scale-105
-                          transition">
-
-                    Free Registration
-
-                </a>
-
-                <a href="#yoga-nidra"
-                   class="bg-white border-2 border-[#6C3FC5]
-                          text-[#6C3FC5]
-                          px-8 py-4
-                          rounded-full
-                          font-semibold
-                          hover:bg-[#6C3FC5]
-                          hover:text-white
-                          transition">
-
-                    Explore Yoga Nidra →
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- RIGHT -->
-        <div class="relative flex justify-center items-center py-14 overflow-hidden">
-
-            <!-- Rotating Ring -->
-            <div class="absolute w-[260px] h-[260px] sm:w-[480px] sm:h-[480px]
-                        rounded-full border-2 border-dashed border-purple-200
-                        animate-[spin_20s_linear_infinite]">
-            </div>
-
-            <!-- Glow -->
-            <div class="absolute w-[220px] h-[220px] sm:w-[380px] sm:h-[380px]
-                        rounded-full bg-purple-200/30 blur-3xl">
-            </div>
-
-            <!-- Image -->
-            <img src="./images/yoga1.webp"
-                 alt="Yoga Nidra"
-                 class="relative z-10
-                        w-[220px] h-[220px]
-                        sm:w-[320px] sm:h-[320px]
-                        lg:w-[420px] lg:h-[420px]
-                        object-cover
-                        rounded-full
-                        border-4 border-white
-                        shadow-[0_30px_80px_rgba(108,63,197,.25)]">
-
-            <!-- Floating Card 1 -->
-            <div class="hidden sm:flex absolute top-6 left-2 z-20
-                        bg-white/95 backdrop-blur-xl
-                        border border-white
-                        rounded-2xl
-                        px-5 py-4
-                        shadow-xl
-                        items-center gap-3
-                        animate-[float_5s_ease-in-out_infinite]">
-
-                <span class="text-3xl">🧘</span>
-
-                <div>
-                    <p class="font-bold text-[#2d1854] text-sm">
-                        Yoga Nidra
-                    </p>
-
-                    <p class="text-gray-400 text-xs">
-                        Conscious Relaxation
-                    </p>
-                </div>
-
-            </div>
-
-            <!-- Floating Card 2 -->
-            <div class="hidden sm:flex absolute bottom-12 right-2 z-20
-                        bg-white/95 backdrop-blur-xl
-                        border border-white
-                        rounded-2xl
-                        px-5 py-4
-                        shadow-xl
-                        items-center gap-3
-                        animate-[floatSlow_7s_ease-in-out_infinite]">
-
-                <span class="text-3xl">🌸</span>
-
-                <div>
-                    <p class="font-bold text-[#2d1854] text-sm">
-                        Women's Wellness
-                    </p>
-
-                    <p class="text-gray-400 text-xs">
-                        Pregnancy • PCOD • Menopause
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
 </section>
 
+<!-- YOGA BASICS SECTION -->
+<section id="yoga-basics" class="relative py-24 overflow-hidden bg-white">
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 900,
-    easing: "ease-out-cubic",
-    once: true,
-    offset: 80
-  });
-</script>
+    <div class="max-w-7xl mx-auto px-5 relative z-10">
 
-<!-- ABOUT -->
-<section id="about" class="py-16 md:py-24 bg-white relative overflow-hidden">
-
-    <!-- Background -->
-    <div class="absolute -top-20 -left-20 w-64 h-64 md:w-80 md:h-80 bg-purple-100/50 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-        <!-- Image -->
-        <div
-            class="relative flex justify-center items-end"
-            data-aos="fade-right"
-            data-aos-duration="1000">
-
-            <!-- Capsule Background -->
-            <div class="absolute bottom-0 w-[230px] h-[300px] sm:w-[400px] sm:h-[660px] rounded-full bg-gradient-to-b from-pink-100 via-pink-50 to-pink-200 shadow-2xl blur-[2px]"></div>
-
-            <!-- Glow -->
-            <div class="absolute bottom-8 w-[260px] h-[320px] sm:w-[400px] sm:h-[700px] rounded-full bg-pink-200/30 blur-3xl"></div>
-
-            <!-- Image -->
-            <div class="relative z-10 w-full max-w-[220px] sm:max-w-[400px] h-[280px] sm:h-[650px] rounded-full overflow-hidden border-4 border-white shadow-[0_30px_80px_rgba(236,72,153,0.25)]">
-
-                <img
-                    src="images/aboutImage.png"
-                    alt="Rohini Sanjay Bapat"
-                    class="w-full h-full object-cover">
-
-            </div>
-
-        </div>
-
-        <!-- Content -->
-        <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="150">
-
-            <!-- Badge -->
-            <span
-                class="inline-flex items-center gap-2 bg-pink-100 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4"
-                data-aos="zoom-in"
-                data-aos-delay="200">
-
-                🌸 About YogaNidra.co.in
-
-            </span>
-
-            <!-- Heading -->
-            <h2
-                class="text-3xl md:text-4xl lg:text-5xl font-black text-[#2d1854] leading-tight mb-6"
-                data-aos="fade-up"
-                data-aos-delay="250">
-
-                Holistic Yoga for
-
-                <span class="bg-[#6C3FC5] text-white px-4 py-1 rounded-2xl inline-block -rotate-2 mt-2 md:mt-0">
-
-                    Every Stage of Life
-
-                </span>
-
-            </h2>
-
-            <!-- Paragraph -->
-            <p
-                class="text-gray-600 leading-8 text-lg mb-4"
-                data-aos="fade-up"
-                data-aos-delay="350">
-
-                Founded by <strong>Rohini Sanjay Bapat</strong>,
-                YogaNidra.co.in is dedicated to promoting authentic yogic practices
-                through Yoga Nidra, prenatal yoga, mindful breathing, and holistic
-                wellness. Our mission is to support women during pregnancy while
-                also helping students, professionals, senior citizens, and individuals
-                seeking better physical, mental, and emotional wellbeing.
-
-            </p>
-
-            <p
-                class="text-gray-600 leading-8 mb-8"
-                data-aos="fade-up"
-                data-aos-delay="450">
-
-                Rohini holds a Master's in Yogashastra and is a Certified Therapeutic
-                Yoga Consultant (YCB, Ministry of AYUSH). Currently pursuing her Ph.D.
-                in Yogashastra, she continues her lifelong journey as a dedicated
-                Yog Sadhak, integrating traditional yogic wisdom with modern
-                therapeutic practices.
-
-            </p>
-
-            <!-- Feature Cards -->
-            <div class="grid sm:grid-cols-2 gap-5 mb-8">
-
-                <div
-                    class="bg-white border border-purple-100 rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300"
-                    data-aos="fade-up"
-                    data-aos-delay="550">
-
-                    <div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-4">
-                        🌸
-                    </div>
-
-                    <h4 class="text-lg font-bold text-[#2d1854] mb-2">
-                        Women's Wellness
-                    </h4>
-
-                    <p class="text-gray-500 text-sm leading-6">
-                        Specialized yoga practices supporting pregnancy,
-                        PCOD, PCOS, menstrual health and menopause.
-                    </p>
-
-                </div>
-
-                <div
-                    class="bg-white border border-pink-100 rounded-3xl p-6 shadow-lg hover:-translate-y-2 transition duration-300"
-                    data-aos="fade-up"
-                    data-aos-delay="700">
-
-                    <div class="w-14 h-14 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl mb-4">
-                        🧘
-                    </div>
-
-                    <h4 class="text-lg font-bold text-[#2d1854] mb-2">
-                        Therapeutic Yoga
-                    </h4>
-
-                    <p class="text-gray-500 text-sm leading-6">
-                        Yoga Nidra, breathing practices, meditation and
-                        relaxation techniques for holistic wellbeing.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Highlights -->
-            <div
-                class="flex flex-wrap gap-3 mb-8"
-                data-aos="fade-up"
-                data-aos-delay="800">
-
-                <span class="bg-white shadow-md rounded-full px-5 py-2.5 text-sm text-gray-700">
-                    ✔ Certified Yoga Therapist
-                </span>
-
-                <span class="bg-white shadow-md rounded-full px-5 py-2.5 text-sm text-gray-700">
-                    ✔ Women's Wellness Programs
-                </span>
-
-                <span class="bg-white shadow-md rounded-full px-5 py-2.5 text-sm text-gray-700">
-                    ✔ Meditation & Breathing
-                </span>
-
-                <span class="bg-white shadow-md rounded-full px-5 py-2.5 text-sm text-gray-700">
-                    ✔ Ph.D. Scholar – Yogashastra
-                </span>
-
-            </div>
-
-            <!-- CTA -->
-            <div
-                data-aos="zoom-in-up"
-                data-aos-delay="900">
-
-                <a
-                    href="#register"
-                    class="inline-flex items-center gap-2 bg-gradient-to-r from-[#E876A0] to-[#6C3FC5] text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 transition-transform">
-
-                    Begin Your Journey →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- YOGA BASICS -->
-<section id="yoga-basics" class="relative py-24 overflow-hidden bg-gradient-to-br from-[#FDF9FF] via-white to-[#FFF8FC]">
-
-    <!-- Background Decorations -->
-     <div class="absolute -top-24 right-0 w-96 h-96 bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-0 left-0 w-80 h-80 bg-pink-100/40 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-5">
-
-        <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-
-            <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-5 py-2 rounded-full text-sm font-semibold mb-5">
+        <!-- Main Heading Area -->
+        <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-flex items-center gap-2 text-[#D37198] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide bg-[#D37198]/5">
                 🧘 Foundations of Yoga
             </span>
 
-            <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] leading-tight mb-6">
-                Understanding
-                <span class="bg-[#6C3FC5] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">
-                    Yoga
-                </span>
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Understanding Yoga
             </h2>
 
-            <p class="text-gray-600 leading-8 text-lg">
-
-                Yoga is a <strong class="text-[#2d1854]">multifaceted experiential science</strong>,
-                not merely a form of physical exercise. According to Maharshi Patanjali,
-
-                <span class="font-semibold italic text-[#6C3FC5]">
+            <div class="text-gray-600 leading-relaxed text-lg md:text-xl font-light">
+                Yoga is an <strong class="font-semibold text-[#D37198]">experiential science</strong>, 
+                not merely a form of physical exercise. According to Maharshi Patanjali:
+                <span class="block my-6 font-semibold italic text-[#D37198] text-xl tracking-wide bg-[#F5E5F0]/60 py-4 px-6 rounded-2xl border-l-4 border-[#D37198] shadow-sm">
                     "Yogaḥ Chitta Vritti Nirodhaḥ"
                 </span>
-
-                — Yoga is the stilling of the fluctuations of the mind, leading to
-                harmony of body, mind and consciousness.
-
-            </p>
-
+                — Yoga is the stilling of the fluctuations of the mind, leading to harmony of body, mind, and consciousness.
+            </div>
         </div>
 
-        <!-- Cards -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-
-            <!-- Card 1 -->
-            <div class="group bg-white rounded-[30px] p-8 border border-purple-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition duration-500">
-
-                <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+        <!-- Core Philosophy Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <!-- Card 1: Slides from Left -->
+            <div data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                 class="group bg-gray-50 rounded-[32px] p-8 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 border border-gray-100">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#D37198] to-[#BD73A4] flex items-center justify-center text-3xl mb-6 shadow-md group-hover:scale-110 transition duration-300 text-white">
                     🔬
                 </div>
-
-                <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                    Experiential Science
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-
-                    Yoga is a practical science experienced through regular practice,
-                    integrating body, breath, mind and consciousness to promote inner
-                    awareness rather than merely intellectual understanding.
-
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Experiential Science</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Yoga is a practical science experienced through regular practice, integrating body, breath, mind, and consciousness to promote inner awareness rather than merely intellectual understanding.
                 </p>
-
             </div>
 
-            <!-- Card 2 -->
-            <div class="group bg-white rounded-[30px] p-8 border border-pink-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition duration-500">
-
-                <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+            <!-- Card 2: Slides from Bottom -->
+            <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                 class="group bg-gray-50 rounded-[32px] p-8 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 border border-gray-100">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#BD73A4] to-[#8F78BC] flex items-center justify-center text-3xl mb-6 shadow-md group-hover:scale-110 transition duration-300 text-white">
                     🌿
                 </div>
-
-                <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                    Multifaceted Practice
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-
-                    Yoga includes ethical values, physical postures, breathing techniques,
-                    meditation, deep relaxation and self-awareness, creating a balanced
-                    lifestyle for physical, mental, emotional and spiritual wellbeing.
-
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Multifaceted Practice</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    Yoga includes ethical values, physical postures, breathing techniques, meditation, deep relaxation, and self-awareness, creating a balanced lifestyle for physical, mental, emotional, and spiritual wellbeing.
                 </p>
-
             </div>
 
-            <!-- Card 3 -->
-            <div class="group bg-white rounded-[30px] p-8 border border-purple-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition duration-500">
-
-                <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
+            <!-- Card 3: Slides from Right -->
+            <div data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                 class="group bg-gray-50 rounded-[32px] p-8 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 border border-gray-100">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#8F78BC] to-[#D37198] flex items-center justify-center text-3xl mb-6 shadow-md group-hover:scale-110 transition duration-300 text-white">
                     🎯
                 </div>
-
-                <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                    Universal Objective
-                </h3>
-
-                <p class="text-gray-600 leading-7">
-
-                    The ultimate purpose of Yoga is inner peace and self-realisation.
-                    Its regular practice enhances physical health, emotional stability,
-                    mental clarity and spiritual growth for people of all ages.
-
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Universal Objective</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    The ultimate purpose of Yoga is inner peace and self-realisation. Its regular practice enhances physical health, emotional stability, mental clarity, and spiritual growth for people of all ages.
                 </p>
+            </div>
+        </div>
 
+        <!-- Dynamic & Meditative Practices Container -->
+        <div data-aos="fade-up" data-aos-duration="1200" class="bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[40px] shadow-2xl p-8 md:p-12 lg:p-16">
+            
+            <!-- Inner Container Heading -->
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="inline-flex items-center gap-2 bg-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold mb-5 uppercase tracking-wider">
+                    ✨ Complete Yogic Practices
+                </span>
+                <h3 class="text-3xl lg:text-4xl font-black text-white mb-5">
+                    Dynamic & Meditative Practices
+                </h3>
+                <p class="text-purple-100 leading-relaxed text-base md:text-lg">
+                    Yoga offers a complete spectrum of practices—from energising physical techniques to deeply meditative experiences. Together they cultivate strength, awareness, relaxation, and holistic wellbeing.
+                </p>
+            </div>
+
+            <!-- 4-Column Grid for Pillars (Staggered Load Effect) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Pillar 1: Asana -->
+                <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800"
+                     class="group bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-[#D37198]/10 flex items-center justify-center text-[#D37198] text-2xl mb-5 group-hover:bg-[#D37198] group-hover:text-white transition-all duration-300">
+                            🧘‍♀️
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Asana</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Physical postures that improve strength, flexibility, balance, and overall physical wellbeing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Pranayama -->
+                <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800"
+                     class="group bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-[#BD73A4]/10 flex items-center justify-center text-[#BD73A4] text-2xl mb-5 group-hover:bg-[#BD73A4] group-hover:text-white transition-all duration-300">
+                            💨
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Pranayama</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Conscious regulation of breath to enhance vitality, concentration, emotional stability, and inner calm.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: Meditation -->
+                <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="800"
+                     class="group bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-[#8F78BC]/10 flex items-center justify-center text-[#8F78BC] text-2xl mb-5 group-hover:bg-[#8F78BC] group-hover:text-white transition-all duration-300">
+                            🕉️
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Meditation</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            Dharana (concentration) and Dhyana (meditation) cultivate sustained attention, deep mindfulness, and profound mental clarity.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4: Yoga Nidra -->
+                <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="800"
+                     class="group bg-white rounded-3xl p-6 shadow-lg hover:-translate-y-2 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-[#D37198]/10 flex items-center justify-center text-[#D37198] text-2xl mb-5 group-hover:bg-[#D37198] group-hover:text-white transition-all duration-300">
+                            🌙
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Yoga Nidra</h4>
+                        <p class="text-gray-600 leading-relaxed text-sm">
+                            A guided practice of Pratyahara (sensory withdrawal) that promotes deep physical, mental, and emotional relaxation while maintaining awareness.
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </div>
-
-     <!-- Feature Cards -->
-    <div class="grid md:grid-cols-3 gap-8 mb-20">
-
-        <!-- Card 1 -->
-        <div class="group bg-white rounded-[30px] p-8 border border-purple-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
-
-            <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
-                🔬
-            </div>
-
-            <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                Experiential Science
-            </h3>
-
-            <p class="text-gray-600 leading-7">
-
-                Yoga is both subjective and objective—a living science verified through
-                direct experience. It harmoniously integrates body, breath, mind,
-                emotions and consciousness.
-
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-        <div class="group bg-white rounded-[30px] p-8 border border-pink-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
-
-            <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
-                🌿
-            </div>
-
-            <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                Multifaceted System
-            </h3>
-
-            <p class="text-gray-600 leading-7">
-
-                Yoga combines ethical living, physical practices, breathing techniques,
-                meditation and inner awareness to create complete wellbeing for every
-                stage of life.
-
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-        <div class="group bg-white rounded-[30px] p-8 border border-purple-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
-
-            <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition">
-                🎯
-            </div>
-
-            <h3 class="text-xl font-bold text-[#2d1854] mb-4">
-                Universal Objective
-            </h3>
-
-            <p class="text-gray-600 leading-7">
-
-                Beyond physical fitness, Yoga cultivates mental clarity, emotional
-                balance and spiritual growth, ultimately guiding practitioners toward
-                self-realisation.
-
-            </p>
-
-        </div>
-
     </div>
-
-    <!-- Dynamic & Meditative Practices -->
-   <div class="bg-white rounded-[36px] border border-purple-100 shadow-2xl p-8 md:p-10 lg:p-14"
-     data-aos="fade-up"
-     data-aos-duration="1000">
-
-    <!-- Heading -->
-    <div class="text-center max-w-3xl mx-auto mb-12">
-
-        <span
-            class="inline-flex items-center gap-2 bg-pink-100 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-5"
-            data-aos="zoom-in"
-            data-aos-delay="100">
-
-            <i class="fa-solid fa-spa"></i>
-            Complete Yogic Practices
-
-        </span>
-
-        <h3
-            class="text-3xl lg:text-4xl font-black text-[#2d1854] mb-5"
-            data-aos="fade-up"
-            data-aos-delay="200">
-
-            Dynamic &
-            <span class="bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] bg-clip-text text-transparent">
-                Meditative Practices
-            </span>
-
-        </h3>
-
-        <p
-            class="text-gray-600 leading-8"
-            data-aos="fade-up"
-            data-aos-delay="300">
-
-            Yoga offers a complete spectrum of practices—from energising physical
-            techniques to deeply meditative experiences. Together they cultivate
-            strength, awareness, relaxation and holistic wellbeing.
-
-        </p>
-
-    </div>
-
-    <!-- Cards -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <!-- Asana -->
-        <div
-            class="bg-gradient-to-br from-[#FDF9FF] to-[#FFF7FB] rounded-3xl p-6 border border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="100">
-
-            <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-[#6C3FC5] text-3xl mb-5">
-                <i class="fa-solid fa-person-walking"></i>
-            </div>
-
-            <h4 class="text-xl font-bold text-[#2d1854] mb-3">
-                Asana
-            </h4>
-
-            <p class="text-gray-600 leading-7 text-sm">
-                Physical postures that improve strength, flexibility, balance and
-                overall physical wellbeing.
-            </p>
-
-        </div>
-
-        <!-- Pranayama -->
-        <div
-            class="bg-gradient-to-br from-[#FDF9FF] to-[#FFF7FB] rounded-3xl p-6 border border-pink-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="250">
-
-            <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-[#E876A0] text-3xl mb-5">
-                <i class="fa-solid fa-wind"></i>
-            </div>
-
-            <h4 class="text-xl font-bold text-[#2d1854] mb-3">
-                Pranayama
-            </h4>
-
-            <p class="text-gray-600 leading-7 text-sm">
-                Conscious regulation of breath to enhance vitality,
-                concentration, emotional stability and inner calm.
-            </p>
-
-        </div>
-
-        <!-- Meditation -->
-        <div
-            class="bg-gradient-to-br from-[#FDF9FF] to-[#FFF7FB] rounded-3xl p-6 border border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="400">
-
-            <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-[#6C3FC5] text-3xl mb-5">
-                <i class="fa-solid fa-om"></i>
-            </div>
-
-            <h4 class="text-xl font-bold text-[#2d1854] mb-3">
-                Meditation
-            </h4>
-
-            <p class="text-gray-600 leading-7 text-sm">
-                Dharana and Dhyana cultivate sustained attention,
-                mindfulness and profound mental clarity.
-            </p>
-
-        </div>
-
-        <!-- Yoga Nidra -->
-        <div
-            class="bg-gradient-to-br from-[#FDF9FF] to-[#FFF7FB] rounded-3xl p-6 border border-pink-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
-            data-aos="fade-up"
-            data-aos-delay="550">
-
-            <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-[#E876A0] text-3xl mb-5">
-                <i class="fa-solid fa-moon"></i>
-            </div>
-
-            <h4 class="text-xl font-bold text-[#2d1854] mb-3">
-                Yoga Nidra
-            </h4>
-
-            <p class="text-gray-600 leading-7 text-sm">
-                A guided practice of Pratyahara that promotes deep physical,
-                mental and emotional relaxation while maintaining awareness.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
 </section>
 
-<!-- YOGA NIDRA -->
+
+<!-- YOGA NIDRA SECTION -->
 <section id="yoga-nidra" class="py-24 bg-white relative overflow-hidden">
 
-    <!-- Background -->
-    <div class="absolute -top-20 -left-20 w-72 h-72 bg-pink-100/50 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- Background Decorative Gradients -->
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-[#E876A0]/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-5">
 
-        <!-- Heading -->
+        <!-- Simple, Flat Main Heading -->
         <div class="text-center max-w-3xl mx-auto mb-16">
-
-            <span class="inline-flex items-center gap-2 bg-pink-100 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-5">
+            <span class="inline-flex items-center gap-2 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide">
                 🌙 Yoga Nidra
             </span>
 
-            <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] mb-6 leading-tight">
-
-                Origin, Introduction &
-                <span class="bg-[#E876A0] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">
-                    Authenticity
-                </span>
-
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Origin, Introduction & Authenticity
             </h2>
 
-            <p class="text-gray-600 text-lg leading-8">
-
-                Yoga Nidra, often called <strong>"Yogic Sleep"</strong>,
+            <p class="text-gray-600 text-lg leading-relaxed font-light">
+                Yoga Nidra, often called <strong class="font-semibold text-[#E876A0]">"Yogic Sleep"</strong>,
                 is an ancient meditative practice rooted in the Tantric tradition.
                 It was systematically presented by
-                <strong class="text-[#2d1854]">
+                <strong class="font-semibold text-gray-900">
                     Swami Satyananda Saraswati
                 </strong>
                 of the Bihar School of Yoga, making it one of the most authentic
                 and scientifically structured relaxation practices.
-
             </p>
-
         </div>
 
+        <!-- Two-Column Layout Grid -->
         <div class="grid lg:grid-cols-2 gap-12 items-start">
 
-            <!-- Left -->
+            <!-- Left Column: Philosophy & Lineage -->
             <div class="space-y-6">
 
-                <div class="bg-white rounded-[30px] border border-purple-100 shadow-xl p-8 hover:-translate-y-2 transition duration-500">
-
-                    <div class="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl mb-6">
+                <!-- Ancient Origin Card -->
+                <div class="group bg-gray-50 rounded-[32px] border border-gray-100 shadow-sm p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
+                    <div class="w-16 h-16 rounded-2xl bg-[#E876A0]/10 flex items-center justify-center text-3xl mb-6 group-hover:bg-[#E876A0] group-hover:text-white transition-all duration-300">
                         📜
                     </div>
-
-                    <h3 class="text-2xl font-bold text-[#2d1854] mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
                         Ancient Origin
                     </h3>
-
-                    <p class="text-gray-600 leading-8">
-
+                    <p class="text-gray-600 leading-relaxed">
                         Yoga Nidra traces its roots to the Nyasa practices of Tantra
                         and the Mandukya Upanishad's description of the four states of
                         consciousness. Swami Satyananda Saraswati later systematised
                         it into a structured scientific practice at the Bihar School
                         of Yoga.
-
                     </p>
-
                 </div>
 
-                <div class="bg-white rounded-[30px] border border-pink-100 shadow-xl p-8 hover:-translate-y-2 transition duration-500">
-
-                    <div class="w-16 h-16 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl mb-6">
+                <!-- Concept Introduction Card -->
+                <div class="group bg-gray-50 rounded-[32px] border border-gray-100 shadow-sm p-8 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
+                    <div class="w-16 h-16 rounded-2xl bg-[#BD73A4]/10 flex items-center justify-center text-3xl mb-6 group-hover:bg-[#BD73A4] group-hover:text-white transition-all duration-300">
                         🧠
                     </div>
-
-                    <h3 class="text-2xl font-bold text-[#2d1854] mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
                         What is Yoga Nidra?
                     </h3>
-
-                    <p class="text-gray-600 leading-8">
-
+                    <p class="text-gray-600 leading-relaxed">
                         Yoga Nidra is a state of conscious relaxation where the body
                         rests deeply while awareness remains awake. Through body
                         rotation, breath awareness, visualisation and Sankalpa,
                         practitioners experience profound physical, mental, emotional
                         and spiritual relaxation.
-
                     </p>
-
                 </div>
 
-                <!-- Authenticity Card -->
-                <div class="rounded-[30px] bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] text-white p-8 shadow-2xl">
-
-                    <h3 class="text-2xl font-bold mb-4">
+                <!-- Authentic Lineage Card (Styled with Pink Signature Gradient) -->
+                <div class="rounded-[32px] bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
                         🎖 Authentic Lineage
                     </h3>
-
-                    <p class="leading-8 text-white/90">
-
+                    <p class="leading-relaxed text-purple-50 font-light">
                         Yoga Nidra as taught by the Bihar School of Yoga preserves the
                         authentic traditional method. Modern neuroscience also recognises
                         its role in deep relaxation, emotional regulation, creativity,
                         stress reduction and subconscious transformation.
-
                     </p>
+                </div>
+
+            </div>
+
+            <!-- Right Column: Visuals & Core Pillars -->
+            <div class="space-y-6">
+
+                <!-- Image Showcase Card -->
+                <div class="bg-gray-50 rounded-[32px] border border-gray-100 shadow-sm overflow-hidden">
+                    <img
+                        src="images/lotus.jfif"
+                        alt="Lotus Meditation"
+                        class="w-full h-56 sm:h-72 md:h-80 object-cover hover:scale-105 transition-transform duration-700">
+
+                    <div class="p-6 md:p-8 bg-white">
+                        <blockquote class="italic text-gray-600 text-base md:text-lg leading-relaxed border-l-4 border-[#E876A0] pl-4 md:pl-5">
+                            "Yoga Nidra is the art of conscious relaxation where
+                            healing begins from within. A few minutes of Yoga Nidra
+                            may provide the restorative effects of several hours
+                            of restful sleep."
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- 2x2 Pillars Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                    <!-- Pillar 1: Deep Rest -->
+                    <div class="group bg-gray-50 rounded-3xl p-6 border border-gray-100 hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300 inline-block">😴</div>
+                        <h5 class="font-bold text-gray-900 text-lg mb-2">
+                            Deep Rest
+                        </h5>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Activates the parasympathetic nervous system,
+                            promoting deep physical and mental restoration.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2: Sankalpa -->
+                    <div class="group bg-gray-50 rounded-3xl p-6 border border-gray-100 hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300 inline-block">💡</div>
+                        <h5 class="font-bold text-gray-900 text-lg mb-2">
+                            Sankalpa
+                        </h5>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            A positive resolve planted in the subconscious
+                            to encourage lasting personal transformation.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3: Pratyahara -->
+                    <div class="group bg-gray-50 rounded-3xl p-6 border border-gray-100 hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300 inline-block">🌙</div>
+                        <h5 class="font-bold text-gray-900 text-lg mb-2">
+                            Pratyahara
+                        </h5>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Yoga Nidra is regarded as a practical method of
+                            Pratyahara—the fifth limb of Ashtanga Yoga.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 4: Theta State -->
+                    <div class="group bg-gray-50 rounded-3xl p-6 border border-gray-100 hover:-translate-y-2 hover:shadow-lg transition-all duration-300">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300 inline-block">🧠</div>
+                        <h5 class="font-bold text-gray-900 text-lg mb-2">
+                            Theta State
+                        </h5>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Encourages deep relaxation associated with enhanced
+                            creativity, learning and emotional healing.
+                        </p>
+                    </div>
 
                 </div>
 
             </div>
 
-            <!-- Right -->
-           <div class="space-y-6">
-
-    <!-- Image Card -->
-    <div class="bg-white rounded-[24px] md:rounded-[30px] border border-purple-100 shadow-2xl overflow-hidden">
-
-        <img
-            src="images/lotus.jfif"
-            alt="Lotus Meditation"
-            class="w-full h-56 sm:h-72 md:h-80 object-cover hover:scale-105 transition-transform duration-700">
-
-        <div class="p-5 sm:p-6 md:p-8">
-
-            <blockquote class="italic text-gray-600 text-base md:text-lg leading-7 md:leading-8 border-l-4 border-[#6C3FC5] pl-4 md:pl-5">
-
-                "Yoga Nidra is the art of conscious relaxation where
-                healing begins from within. A few minutes of Yoga Nidra
-                may provide the restorative effects of several hours
-                of restful sleep."
-
-            </blockquote>
-
         </div>
 
     </div>
-
-    <!-- Benefits -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-
-        <!-- Card 1 -->
-        <div class="bg-gradient-to-br from-[#FDF9FF] to-white rounded-3xl p-5 md:p-6 border border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div class="text-4xl mb-4">😴</div>
-
-            <h5 class="font-bold text-[#2d1854] text-lg mb-2">
-                Deep Rest
-            </h5>
-
-            <p class="text-gray-600 text-sm leading-6">
-                Activates the parasympathetic nervous system,
-                promoting deep physical and mental restoration.
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-gradient-to-br from-[#FFF7FB] to-white rounded-3xl p-5 md:p-6 border border-pink-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div class="text-4xl mb-4">💡</div>
-
-            <h5 class="font-bold text-[#2d1854] text-lg mb-2">
-                Sankalpa
-            </h5>
-
-            <p class="text-gray-600 text-sm leading-6">
-                A positive resolve planted in the subconscious
-                to encourage lasting personal transformation.
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-gradient-to-br from-[#FDF9FF] to-white rounded-3xl p-5 md:p-6 border border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div class="text-4xl mb-4">🌙</div>
-
-            <h5 class="font-bold text-[#2d1854] text-lg mb-2">
-                Pratyahara
-            </h5>
-
-            <p class="text-gray-600 text-sm leading-6">
-                Yoga Nidra is regarded as a practical method of
-                Pratyahara—the fifth limb of Ashtanga Yoga.
-            </p>
-
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-gradient-to-br from-[#FFF7FB] to-white rounded-3xl p-5 md:p-6 border border-pink-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-
-            <div class="text-4xl mb-4">🧠</div>
-
-            <h5 class="font-bold text-[#2d1854] text-lg mb-2">
-                Theta State
-            </h5>
-
-            <p class="text-gray-600 text-sm leading-6">
-                Encourages deep relaxation associated with enhanced
-                creativity, learning and emotional healing.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-        </div>
-
-    </div>
-
 </section>
 
-<!-- ASHTANG YOGA -->
-<section id="ashtang" class="py-24 bg-gradient-to-br from-[#FDF9FF] via-[#F3EEFF] to-[#FFF0F8] relative overflow-hidden">
+<!-- ASHTANG YOGA SECTION -->
+<section id="ashtang" class="py-24 bg-white relative overflow-hidden">
+
+    
   <div class="max-w-7xl mx-auto px-5">
+    
+    <!-- Simple & Flat Main Heading Area -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-5 py-2 rounded-full text-sm font-semibold mb-4">🪷 Ashtang Yoga</span>
-      <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] mb-4">Eight Limbs of <span class="bg-[#6C3FC5] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">Ashtang Yoga</span></h2>
-      <p class="text-gray-500 leading-8">Patanjali's Yoga Sutras describe the eightfold path (Ashtanga) as the complete system for attaining liberation. Each limb builds upon the previous, culminating in Samadhi.</p>
+      <span class="inline-flex items-center gap-2 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide animate-pulse">
+        🪷 Ashtang Yoga
+      </span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6" data-aos="fade-up" data-aos-duration="800">
+        Eight Limbs of Ashtang Yoga
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed font-light" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        Patanjali's Yoga Sutras describe the eightfold path (Ashtanga) as the complete system for attaining liberation. Each limb builds upon the previous, culminating in Samadhi.
+      </p>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">1</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Yama</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Ethical Restraints</p>
-        <p class="text-gray-500 text-sm leading-6">Non-violence (Ahimsa), Truthfulness, Non-stealing, Celibacy, Non-possessiveness. The moral foundation of Yoga practice.</p>
+
+    <!-- 8-Card Uniform Grid Structure with Progressive One-by-One AOS Delays -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Limb 1: Yama -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            1
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Yama</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Ethical Restraints</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Non-violence (Ahimsa), Truthfulness, Non-stealing, Celibacy, Non-possessiveness. The moral foundation of Yoga practice.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">2</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Niyama</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Personal Observances</p>
-        <p class="text-gray-500 text-sm leading-6">Purity, Contentment, Discipline, Self-study, Surrender to the Divine. Internal discipline for inner growth.</p>
+
+      <!-- Limb 2: Niyama -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            2
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Niyama</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Personal Observances</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Purity, Contentment, Discipline, Self-study, Surrender to the Divine. Internal discipline for inner growth.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">3</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Asana</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Physical Postures</p>
-        <p class="text-gray-500 text-sm leading-6">Stable, comfortable postures that prepare the body for meditation. Promotes strength, flexibility, and body awareness.</p>
+
+      <!-- Limb 3: Asana -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            3
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Asana</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Physical Postures</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Stable, comfortable postures that prepare the body for meditation. Promotes strength, flexibility, and body awareness.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">4</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Pranayama</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Breath Control</p>
-        <p class="text-gray-500 text-sm leading-6">Regulation of life-force (Prana) through breath. Energises, calms and prepares the mind for deeper inward practices.</p>
+
+      <!-- Limb 4: Pranayama -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            4
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Pranayama</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Breath Control</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Regulation of life-force (Prana) through breath. Energises, calms and prepares the mind for deeper inward practices.
+          </p>
+        </div>
       </div>
-      <div class="bg-gradient-to-br from-[#6C3FC5] to-[#9B72EF] rounded-3xl p-6 shadow-xl text-white hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3 lg:col-span-2">
-        <div class="w-9 h-9 rounded-xl bg-white/20 text-white font-black text-sm flex items-center justify-center">5</div>
-        <h4 class="text-lg font-bold">Pratyahara ⭐</h4>
-        <p class="text-white/70 text-xs font-semibold uppercase tracking-wider">Withdrawal of Senses — Yoga Nidra Lives Here</p>
-        <p class="text-white/85 text-sm leading-6">The inward withdrawal of the senses from external objects. Yoga Nidra is a profound practice of Pratyahara — the gateway between the outer (dynamic) and inner (meditative) limbs of Yoga. Through conscious relaxation, awareness is drawn inward, making it one of the most powerful pratyahara tools available.</p>
+
+      <!-- Limb 5: Pratyahara -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            5
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1 flex items-center gap-1.5">
+            Pratyahara <span class="text-[#E876A0] text-sm">★</span>
+          </h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Withdrawal of Senses</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            The inward withdrawal of the senses. Yoga Nidra is a profound practice of Pratyahara — the gateway between outer and inner limbs. Through conscious relaxation, awareness is drawn deep inward.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">6</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Dharana</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Concentration</p>
-        <p class="text-gray-500 text-sm leading-6">Single-pointed focus on an object, mantra, or visualisation. Trains the mind to remain steady and undistracted.</p>
+
+      <!-- Limb 6: Dharana -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            6
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Dharana</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Concentration</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Single-pointed focus on an object, mantra, or visualisation. Trains the mind to remain steady and undistracted.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-6 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] text-white font-black text-sm flex items-center justify-center">7</div>
-        <h4 class="text-lg font-bold text-[#2d1854]">Dhyana</h4>
-        <p class="text-[#6C3FC5] text-xs font-semibold uppercase tracking-wider">Meditation</p>
-        <p class="text-gray-500 text-sm leading-6">Uninterrupted flow of awareness towards the object of focus. Deep meditation that transcends thought and brings inner peace.</p>
+
+      <!-- Limb 7: Dhyana -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="700" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            7
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Dhyana</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Meditation</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Uninterrupted flow of awareness towards the object of focus. Deep meditation that transcends thought and brings inner peace.
+          </p>
+        </div>
       </div>
-      <div class="bg-gradient-to-br from-[#E876A0] to-[#6C3FC5] rounded-3xl p-6 shadow-xl text-white hover:-translate-y-2 transition-transform duration-300 flex flex-col gap-3">
-        <div class="w-9 h-9 rounded-xl bg-white/20 text-white font-black text-sm flex items-center justify-center">8</div>
-        <h4 class="text-lg font-bold">Samadhi</h4>
-        <p class="text-white/70 text-xs font-semibold uppercase tracking-wider">Union &amp; Liberation</p>
-        <p class="text-white/85 text-sm leading-6">The highest state — complete absorption of the individual self into pure consciousness. The ultimate goal of Ashtang Yoga.</p>
+
+      <!-- Limb 8: Samadhi -->
+      <div class="group bg-gray-50 rounded-[32px] p-6 border border-gray-100 shadow-sm hover:-translate-y-2 hover:shadow-xl transition-all duration-500 flex flex-col justify-between"
+           data-aos="fade-up" data-aos-delay="800" data-aos-duration="600">
+        <div>
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white font-bold text-sm flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition duration-300">
+            8
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-1">Samadhi</h4>
+          <p class="text-[#E876A0] text-xs font-semibold uppercase tracking-wider mb-3">Union &amp; Liberation</p>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            The highest state — complete absorption of the individual self into pure consciousness. The ultimate goal of Ashtang Yoga.
+          </p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- WOMEN'S WELLNESS -->
+<!-- WOMEN'S WELLNESS SECTION -->
 <section id="women" class="py-24 bg-white relative overflow-hidden">
-  <div class="absolute -top-20 right-0 w-80 h-80 bg-pink-200/30 rounded-full blur-3xl pointer-events-none"></div>
+  
+  <!-- Background Decorative Gradients -->
+  <div class="absolute -top-20 right-0 w-80 h-80 bg-[#E876A0]/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-72 h-72 bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
   <div class="max-w-7xl mx-auto px-5">
+    
+    <!-- Simple & Flat Main Heading Area -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 bg-pink-100 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4">🌸 Women's Wellness</span>
-      <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] mb-4">Yoga for <span class="bg-[#E876A0] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">Every Woman</span></h2>
-      <p class="text-gray-500 leading-8">50% of our focus is dedicated to women's health across all stages of life — from menstrual health to pregnancy, PCOD/PCOS, menopause and beyond. Yoga is not just exercise; it is medicine for the feminine body and spirit.</p>
+      <span class="inline-flex items-center gap-2 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide">
+        🌸 Women's Wellness
+      </span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        Yoga for Every Woman
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed font-light">
+        50% of our focus is dedicated to women's health across all stages of life — from menstrual health to pregnancy, PCOD/PCOS, menopause and beyond. Yoga is not just exercise; it is medicine for the feminine body and spirit.
+      </p>
     </div>
-    <!-- Tabs -->
-    <div class="flex flex-wrap gap-3 justify-center mb-10">
-      <button onclick="switchTab('women','pregnancy')" data-tab-group="women" data-tab-id="pregnancy" class="tab-btn active bg-[#6C3FC5] text-white px-5 py-2.5 rounded-full text-sm font-semibold border-2 border-[#6C3FC5] transition-all">🤰 Pregnancy</button>
-      <button onclick="switchTab('women','pcod')" data-tab-group="women" data-tab-id="pcod" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold border-2 border-purple-200 text-gray-600 hover:border-[#6C3FC5] transition-all">🌺 PCOD/PCOS</button>
-      <button onclick="switchTab('women','menstrual')" data-tab-group="women" data-tab-id="menstrual" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold border-2 border-purple-200 text-gray-600 hover:border-[#6C3FC5] transition-all">💧 Menstrual Health</button>
-      <button onclick="switchTab('women','menopause')" data-tab-group="women" data-tab-id="menopause" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold border-2 border-purple-200 text-gray-600 hover:border-[#6C3FC5] transition-all">🌙 Menopause</button>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="flex flex-wrap gap-3 justify-center mb-12">
+      <button onclick="switchTab('women','pregnancy')" data-tab-group="women" data-tab-id="pregnancy" class="tab-btn active bg-gradient-to-r from-[#D37198] to-[#BD73A4] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-md">
+        🤰 Pregnancy
+      </button>
+      <button onclick="switchTab('women','pcod')" data-tab-group="women" data-tab-id="pcod" class="tab-btn px-6 py-3 rounded-full text-sm font-semibold border border-gray-200 text-gray-600 hover:text-[#E876A0] hover:border-[#E876A0] bg-gray-50 transition-all">
+        🌺 PCOD/PCOS
+      </button>
+      <button onclick="switchTab('women','menstrual')" data-tab-group="women" data-tab-id="menstrual" class="tab-btn px-6 py-3 rounded-full text-sm font-semibold border border-gray-200 text-gray-600 hover:text-[#E876A0] hover:border-[#E876A0] bg-gray-50 transition-all">
+        💧 Menstrual Health
+      </button>
+      <button onclick="switchTab('women','menopause')" data-tab-group="women" data-tab-id="menopause" class="tab-btn px-6 py-3 rounded-full text-sm font-semibold border border-gray-200 text-gray-600 hover:text-[#E876A0] hover:border-[#E876A0] bg-gray-50 transition-all">
+        🌙 Menopause
+      </button>
     </div>
-    <!-- Pregnancy Panel -->
+
+    <!-- ==================== PREGNANCY PANEL ==================== -->
     <div data-panel-group="women" data-panel-id="pregnancy" class="tab-panel active">
-      <div class="grid lg:grid-cols-2 gap-10 items-start">
-        <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-10 border border-pink-100 shadow-xl">
-          <div class="w-14 h-14 rounded-2xl bg-pink-100 flex items-center justify-center text-3xl mb-5">🌱</div>
-          <h3 class="text-2xl font-bold text-[#2d1854] mb-4">Sowing Sanskara Seeds</h3>
-          <p class="text-gray-600 leading-8 mb-4"><em class="font-semibold">"Shuddha beejapoti fale rasal gomati"</em> — Fruits with pure seeds are naturally healthy and nourishing.</p>
-          <p class="text-gray-600 leading-8 mb-4">During pregnancy, Yoga Nidra creates favourable conditions for healthy intrauterine growth. Stress hormones in the mother's bloodstream directly affect the baby — <strong class="text-[#6C3FC5]">Yoga Nidra reduces this stress, promoting calmness and a healthier pregnancy.</strong></p>
-          <div class="grid grid-cols-2 gap-4 mt-6">
-            <div class="bg-white rounded-2xl p-4"><h5 class="font-bold text-[#2d1854] text-sm">🌸 Reduces Stress</h5><p class="text-gray-500 text-xs mt-1 leading-5">Emotional calm during pregnancy</p></div>
-            <div class="bg-white rounded-2xl p-4"><h5 class="font-bold text-[#2d1854] text-sm">🤱 Supports Baby</h5><p class="text-gray-500 text-xs mt-1 leading-5">Positive prenatal environment</p></div>
-            <div class="bg-white rounded-2xl p-4"><h5 class="font-bold text-[#2d1854] text-sm">🧘 Deep Relaxation</h5><p class="text-gray-500 text-xs mt-1 leading-5">Improved rest and awareness</p></div>
-            <div class="bg-white rounded-2xl p-4"><h5 class="font-bold text-[#2d1854] text-sm">💖 Emotional Balance</h5><p class="text-gray-500 text-xs mt-1 leading-5">Inner peace and resilience</p></div>
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        
+        <!-- Left Side: Main Philosophy Card -->
+        <div class="bg-gray-50 rounded-[32px] p-8 md:p-10 border border-gray-100 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-[#E876A0]/10 flex items-center justify-center text-3xl mb-6">
+            🌱
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Sowing Sanskara Seeds</h3>
+          <p class="text-gray-600 leading-relaxed mb-4 italic border-l-4 border-[#E876A0] pl-4">
+            "Shuddha beejapoti fale rasal gomati" — Fruits with pure seeds are naturally healthy and nourishing.
+          </p>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            During pregnancy, Yoga Nidra creates favourable conditions for healthy intrauterine growth. Stress hormones in the mother's bloodstream directly affect the baby — <strong class="font-semibold text-[#E876A0]">Yoga Nidra reduces this stress, promoting calmness and a healthier pregnancy.</strong>
+          </p>
+          
+          <!-- 2x2 Inner Mini Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+              <h5 class="font-bold text-gray-900 text-sm">🌸 Reduces Stress</h5>
+              <p class="text-gray-500 text-xs mt-1 leading-normal">Emotional calm during pregnancy</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+              <h5 class="font-bold text-gray-900 text-sm">🤱 Supports Baby</h5>
+              <p class="text-gray-500 text-xs mt-1 leading-normal">Positive prenatal environment</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+              <h5 class="font-bold text-gray-900 text-sm">🧘 Deep Relaxation</h5>
+              <p class="text-gray-500 text-xs mt-1 leading-normal">Improved rest and awareness</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm">
+              <h5 class="font-bold text-gray-900 text-sm">💖 Emotional Balance</h5>
+              <p class="text-gray-500 text-xs mt-1 leading-normal">Inner peace and resilience</p>
+            </div>
           </div>
         </div>
-        <div class="space-y-5">
-          <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform">
-            <h4 class="font-bold text-[#2d1854] mb-3">✔ Prenatal Yoga Asanas</h4>
-            <p class="text-gray-500 text-sm leading-7">Safe, modified postures to ease back pain, improve circulation, strengthen pelvic floor, and prepare the body for childbirth — trimester by trimester.</p>
+        
+        <!-- Right Side: Action Pillars List -->
+        <div class="space-y-6">
+          <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <h4 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+              <span class="text-[#E876A0]">✔</span> Prenatal Yoga Asanas
+            </h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Safe, modified postures to ease back pain, improve circulation, strengthen pelvic floor, and prepare the body for childbirth — trimester by trimester.
+            </p>
           </div>
-          <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform">
-            <h4 class="font-bold text-[#2d1854] mb-3">✔ Pranayama for Pregnancy</h4>
-            <p class="text-gray-500 text-sm leading-7">Nadi Shodhana, Bhramari, and Ujjayi breathing reduce anxiety, improve oxygen supply, and build mental resilience for labour.</p>
+          
+          <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <h4 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+              <span class="text-[#BD73A4]">✔</span> Pranayama for Pregnancy
+            </h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Nadi Shodhana, Bhramari, and Ujjayi breathing reduce anxiety, improve oxygen supply, and build mental resilience for labour.
+            </p>
           </div>
-          <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform">
-            <h4 class="font-bold text-[#2d1854] mb-3">✔ Garbha Sanskar</h4>
-            <p class="text-gray-500 text-sm leading-7">Music, positive affirmations, mantras, and meditative practices for the holistic development of the unborn child.</p>
+          
+          <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+            <h4 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+              <span class="text-[#8F78BC]">✔</span> Garbha Sanskar
+            </h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Music, positive affirmations, mantras, and meditative practices for the holistic development of the unborn child.
+            </p>
           </div>
-          <a href="navpalavi.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#E876A0] to-[#6C3FC5] text-white px-7 py-3.5 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform">🌱 See नवपालवी Initiative →</a>
+          
+          <div class="pt-2">
+            <a href="navpalavi.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+              🌱 See नवपालवी Initiative →
+            </a>
+          </div>
         </div>
+
       </div>
     </div>
-    <!-- PCOD Panel -->
-    <div data-panel-group="women" data-panel-id="pcod" class="tab-panel">
-      <div class="grid md:grid-cols-3 gap-7">
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🔄</div><h4 class="font-bold text-[#2d1854] mb-3">Hormonal Balance</h4><p class="text-gray-500 text-sm leading-7">Specific asanas (Baddha Konasana, Supta Virasana) and pranayama stimulate the endocrine system, helping regulate oestrogen and progesterone levels naturally.</p></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">⚖️</div><h4 class="font-bold text-[#2d1854] mb-3">Weight Management</h4><p class="text-gray-500 text-sm leading-7">Dynamic yoga sequences improve insulin sensitivity and metabolism, addressing one of the root causes of PCOD/PCOS while building strength and endurance.</p></div>
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🧘</div><h4 class="font-bold text-[#2d1854] mb-3">Stress Reduction</h4><p class="text-gray-500 text-sm leading-7">Yoga Nidra and meditation lower cortisol — a key driver of hormonal imbalance — creating the inner environment needed for healing and fertility.</p></div>
-        <div class="bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] rounded-3xl p-7 shadow-xl text-white"><div class="text-3xl mb-4">🌺</div><h4 class="font-bold mb-3">Ovarian Health</h4><p class="text-white/85 text-sm leading-7">Targeted practices improve blood flow to the pelvic region, support ovarian function, and may help reduce cyst size with consistent practice.</p></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">💤</div><h4 class="font-bold text-[#2d1854] mb-3">Sleep Quality</h4><p class="text-gray-500 text-sm leading-7">Yoga Nidra dramatically improves sleep — essential for hormonal repair. Even 20 minutes equals hours of deep rest for the endocrine system.</p></div>
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🥗</div><h4 class="font-bold text-[#2d1854] mb-3">Holistic Approach</h4><p class="text-gray-500 text-sm leading-7">Combined with Ayurvedic guidance and nutrition counselling, our IAYT-based programme offers comprehensive, personalised PCOD management.</p></div>
+
+    <!-- ==================== PCOD PANEL ==================== -->
+    <div data-panel-group="women" data-panel-id="pcod" class="tab-panel hidden">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🔄</div>
+          <h4 class="font-bold text-gray-900 mb-2">Hormonal Balance</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Specific asanas (Baddha Konasana, Supta Virasana) and pranayama stimulate the endocrine system, helping regulate oestrogen and progesterone levels naturally.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">⚖️</div>
+          <h4 class="font-bold text-gray-900 mb-2">Weight Management</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Dynamic yoga sequences improve insulin sensitivity and metabolism, addressing one of the root causes of PCOD/PCOS while building strength and endurance.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🧘</div>
+          <h4 class="font-bold text-gray-900 mb-2">Stress Reduction</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Yoga Nidra and meditation lower cortisol — a key driver of hormonal imbalance — creating the inner environment needed for healing and fertility.</p>
+        </div>
+        
+        <!-- Highlighted Box Content in Palette Gradient Styling -->
+        <div class="group bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[32px] p-7 shadow-xl hover:-translate-y-2 transition-all duration-500 text-white">
+          <div class="text-3xl mb-4">🌺</div>
+          <h4 class="font-bold mb-2">Ovarian Health</h4>
+          <p class="text-purple-50 text-sm leading-relaxed font-light">Targeted practices improve blood flow to the pelvic region, support ovarian function, and may help reduce cyst size with consistent practice.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">💤</div>
+          <h4 class="font-bold text-gray-900 mb-2">Sleep Quality</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Yoga Nidra dramatically improves sleep — essential for hormonal repair. Even 20 minutes equals hours of deep rest for the endocrine system.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🥗</div>
+          <h4 class="font-bold text-gray-900 mb-2">Holistic Approach</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Combined with Ayurvedic guidance and nutrition counselling, our IAYT-based programme offers comprehensive, personalised PCOD management.</p>
+        </div>
+
       </div>
     </div>
-    <!-- Menstrual Panel -->
-    <div data-panel-group="women" data-panel-id="menstrual" class="tab-panel">
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-10 border border-pink-100 shadow-xl">
-          <h3 class="text-2xl font-bold text-[#2d1854] mb-6">Yoga for Menstrual Harmony</h3>
-          <p class="text-gray-600 leading-8 mb-6">Irregular cycles, painful periods (dysmenorrhoea), heavy bleeding, and premenstrual syndrome respond remarkably well to specific yoga protocols. Our approach addresses root hormonal and nervous system imbalances.</p>
-          <ul class="space-y-3 text-sm text-gray-600">
-            <li class="flex items-start gap-3"><span class="text-[#6C3FC5] font-bold mt-0.5">✓</span>Restorative asanas for pain relief during menstruation</li>
-            <li class="flex items-start gap-3"><span class="text-[#6C3FC5] font-bold mt-0.5">✓</span>Pranayama to regulate mood swings and PMS</li>
-            <li class="flex items-start gap-3"><span class="text-[#6C3FC5] font-bold mt-0.5">✓</span>Yoga Nidra for deep hormonal rest and repair</li>
-            <li class="flex items-start gap-3"><span class="text-[#6C3FC5] font-bold mt-0.5">✓</span>Targeted practices to regularise the cycle naturally</li>
-            <li class="flex items-start gap-3"><span class="text-[#6C3FC5] font-bold mt-0.5">✓</span>Mindfulness for emotional wellbeing throughout the cycle</li>
+
+    <!-- ==================== MENSTRUAL PANEL ==================== -->
+    <div data-panel-group="women" data-panel-id="menstrual" class="tab-panel hidden">
+      <div class="grid lg:grid-cols-2 gap-10">
+        
+        <div class="bg-gray-50 rounded-[32px] p-8 md:p-10 border border-gray-100 shadow-sm">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Yoga for Menstrual Harmony</h3>
+          <p class="text-gray-600 leading-relaxed mb-6">Irregular cycles, painful periods (dysmenorrhoea), heavy bleeding, and premenstrual syndrome respond remarkably well to specific yoga protocols. Our approach addresses root hormonal and nervous system imbalances.</p>
+          <ul class="space-y-3.5 text-sm text-gray-600">
+            <li class="flex items-start gap-3"><span class="text-[#E876A0] font-bold">✓</span> Restorative asanas for pain relief during menstruation</li>
+            <li class="flex items-start gap-3"><span class="text-[#E876A0] font-bold">✓</span> Pranayama to regulate mood swings and PMS</li>
+            <li class="flex items-start gap-3"><span class="text-[#E876A0] font-bold">✓</span> Yoga Nidra for deep hormonal rest and repair</li>
+            <li class="flex items-start gap-3"><span class="text-[#E876A0] font-bold">✓</span> Targeted practices to regularise the cycle naturally</li>
+            <li class="flex items-start gap-3"><span class="text-[#E876A0] font-bold">✓</span> Mindfulness for emotional wellbeing throughout the cycle</li>
           </ul>
         </div>
-        <div class="space-y-5">
-          <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg"><h4 class="font-bold text-[#2d1854] mb-2">Phase-Wise Yoga</h4><p class="text-gray-500 text-sm leading-7">Different yoga practices are recommended for each phase of the menstrual cycle — follicular, ovulatory, luteal, and menstrual — aligning with the body's natural rhythm.</p></div>
-          <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg"><h4 class="font-bold text-[#2d1854] mb-2">Mudra Therapy</h4><p class="text-gray-500 text-sm leading-7">Specific mudras (Yoni Mudra, Apana Mudra) combined with pranayama support reproductive organ health and ease menstrual discomfort.</p></div>
-          <div class="bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] rounded-3xl p-7 text-white shadow-xl"><h4 class="font-bold mb-2">Research-Backed</h4><p class="text-white/85 text-sm leading-7">Clinical studies show yoga reduces menstrual pain by up to 50% and significantly improves quality of life in women with dysmenorrhoea after 3 months of consistent practice.</p></div>
+        
+        <div class="space-y-6">
+          <div class="bg-white border border-gray-100 rounded-[32px] p-7 shadow-sm">
+            <h4 class="font-bold text-gray-900 mb-2">Phase-Wise Yoga</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">Different yoga practices are recommended for each phase of the menstrual cycle — follicular, ovulatory, luteal, and menstrual — aligning with the body's natural rhythm.</p>
+          </div>
+          <div class="bg-white border border-gray-100 rounded-[32px] p-7 shadow-sm">
+            <h4 class="font-bold text-gray-900 mb-2">Mudra Therapy</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">Specific mudras (Yoni Mudra, Apana Mudra) combined with pranayama support reproductive organ health and ease menstrual discomfort.</p>
+          </div>
+          <div class="bg-gradient-to-r from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[32px] p-7 text-white shadow-xl">
+            <h4 class="font-bold mb-2">Research-Backed</h4>
+            <p class="text-purple-50 text-sm leading-relaxed font-light">Clinical studies show yoga reduces menstrual pain by up to 50% and significantly improves quality of life in women with dysmenorrhoea after 3 months of consistent practice.</p>
+          </div>
         </div>
+
       </div>
     </div>
-    <!-- Menopause Panel -->
-    <div data-panel-group="women" data-panel-id="menopause" class="tab-panel">
-      <div class="grid md:grid-cols-3 gap-7">
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🌡️</div><h4 class="font-bold text-[#2d1854] mb-3">Hot Flash Relief</h4><p class="text-gray-500 text-sm leading-7">Sheetali and Sheetkari pranayama provide natural cooling. Restorative yoga and Yoga Nidra significantly reduce frequency and intensity of hot flashes.</p></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🦴</div><h4 class="font-bold text-[#2d1854] mb-3">Bone Health</h4><p class="text-gray-500 text-sm leading-7">Weight-bearing asanas stimulate bone density, combating osteoporosis risk. Balancing poses improve coordination and reduce fall risk in postmenopausal women.</p></div>
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">😊</div><h4 class="font-bold text-[#2d1854] mb-3">Mood &amp; Sleep</h4><p class="text-gray-500 text-sm leading-7">Yoga Nidra and meditation address insomnia, anxiety, and depression common in menopause by naturally boosting serotonin and GABA.</p></div>
-        <div class="bg-gradient-to-br from-[#E876A0] to-[#6C3FC5] rounded-3xl p-7 shadow-xl text-white col-span-full md:col-span-1"><div class="text-3xl mb-4">💪</div><h4 class="font-bold mb-3">Strength &amp; Vitality</h4><p class="text-white/85 text-sm leading-7">Customised sequences maintain muscle mass, cardiovascular health, and overall energy levels — empowering women to thrive through and beyond menopause.</p></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🧠</div><h4 class="font-bold text-[#2d1854] mb-3">Cognitive Clarity</h4><p class="text-gray-500 text-sm leading-7">Pranayama improves brain oxygenation, combating menopausal brain fog and supporting memory, focus, and mental sharpness.</p></div>
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-2 transition-transform"><div class="text-3xl mb-4">🌿</div><h4 class="font-bold text-[#2d1854] mb-3">Holistic Transition</h4><p class="text-gray-500 text-sm leading-7">Our programme embraces menopause as a natural, sacred transition — using yoga, ayurveda, and counselling to make this phase a time of empowerment and wisdom.</p></div>
+
+    <!-- ==================== MENOPAUSE PANEL ==================== -->
+    <div data-panel-group="women" data-panel-id="menopause" class="tab-panel hidden">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🌡️</div>
+          <h4 class="font-bold text-gray-900 mb-2">Hot Flash Relief</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Sheetali and Sheetkari pranayama provide natural cooling. Restorative yoga and Yoga Nidra significantly reduce frequency and intensity of hot flashes.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🦴</div>
+          <h4 class="font-bold text-gray-900 mb-2">Bone Health</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Weight-bearing asanas stimulate bone density, combating osteoporosis risk. Balancing poses improve coordination and reduce fall risk in postmenopausal women.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">😊</div>
+          <h4 class="font-bold text-gray-900 mb-2">Mood &amp; Sleep</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Yoga Nidra and meditation address insomnia, anxiety, and depression common in menopause by naturally boosting serotonin and GABA.</p>
+        </div>
+        
+        <div class="group bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[32px] p-7 shadow-xl hover:-translate-y-2 transition-all duration-500 text-white">
+          <div class="text-3xl mb-4">💪</div>
+          <h4 class="font-bold mb-2">Strength &amp; Vitality</h4>
+          <p class="text-purple-50 text-sm leading-relaxed font-light">Customised sequences maintain muscle mass, cardiovascular health, and overall energy levels — empowering women to thrive through and beyond menopause.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🧠</div>
+          <h4 class="font-bold text-gray-900 mb-2">Cognitive Clarity</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Pranayama improves brain oxygenation, combating menopausal brain fog and supporting memory, focus, and mental sharpness.</p>
+        </div>
+        
+        <div class="group bg-gray-50 border border-gray-100 rounded-[32px] p-7 shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-500">
+          <div class="text-3xl mb-4">🌿</div>
+          <h4 class="font-bold text-gray-900 mb-2">Holistic Transition</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Our programme embraces menopause as a natural, sacred transition — using yoga, ayurveda, and counselling to make this phase a time of empowerment and wisdom.</p>
+        </div>
+
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- FOR EVERYONE -->
-<section id="groups" class="py-24 bg-gradient-to-br from-[#FDF9FF] via-[#F3EEFF] to-[#FFF0F8] relative overflow-hidden">
+
+
+<!-- Filter + AOS Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Init AOS
+    AOS.init({ duration: 650, once: true, offset: 80 });
+
+    // --- Category Filter ---
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards      = document.querySelectorAll('.content-card');
+
+    function applyFilter(filter) {
+        cards.forEach(card => {
+            const cat = card.dataset.category;
+            const show = filter === 'all' || cat === filter;
+            if (show) {
+                card.style.display = '';
+                // tiny stagger re-animation
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(16px)';
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 20);
+            } else {
+                card.style.transition = 'opacity 0.2s ease';
+                card.style.opacity = '0';
+                setTimeout(() => { card.style.display = 'none'; }, 220);
+            }
+        });
+    }
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // update active styles
+            filterBtns.forEach(b => {
+                b.classList.remove('active-filter', 'bg-[#D37198]', 'text-white',
+                    'bg-[#BD73A4]', 'bg-[#8F78BC]', 'bg-[#9B7DB5]');
+                b.classList.add('bg-transparent');
+            });
+            btn.classList.remove('bg-transparent');
+            btn.classList.add('active-filter');
+            // pick the right active colour per button
+            const f = btn.dataset.filter;
+            if (f === 'all')        btn.classList.add('bg-[#D37198]', 'text-white');
+            if (f === 'womens')     btn.classList.add('bg-[#D37198]', 'text-white');
+            if (f === 'audiences')  btn.classList.add('bg-[#BD73A4]', 'text-white');
+            if (f === 'philosophy') btn.classList.add('bg-[#8F78BC]', 'text-white');
+            if (f === 'therapy')    btn.classList.add('bg-[#9B7DB5]', 'text-white');
+
+            applyFilter(f);
+        });
+    });
+</script>
+
+
+<!-- YOGA FOR ALL GROUPS SECTION -->
+<section id="groups" class="py-24 bg-gradient-to-br from-[#FFF9FB] via-[#FBF4FC] to-[#FFF0F5] relative overflow-hidden">
+  
+  <!-- Decorative Background Blur Elements -->
+  <div class="absolute top-0 left-1/4 w-96 h-96 bg-[#E876A0]/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-10 right-0 w-80 h-80 bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
   <div class="max-w-7xl mx-auto px-5">
+    
+    <!-- Simplified & Clean Heading Area -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-5 py-2 rounded-full text-sm font-semibold mb-4">🌍 For Everyone</span>
-      <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] mb-4">Yoga for <span class="bg-[#6C3FC5] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">All Groups</span></h2>
-      <p class="text-gray-500 leading-8">Yoga is universal — a science for every body, every age, every profession. Our second 50% focus serves diverse groups with customised, evidence-based programmes.</p>
+      <span class="inline-flex items-center gap-2 bg-[#E876A0]/10 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide">
+        🌍 For Everyone
+      </span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-[#4A1525] leading-tight mb-6">
+        Yoga for All Groups
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed font-light">
+        Yoga is universal — a science for every body, every age, and every profession. Our second 50% focus serves diverse groups with customised, evidence-based programmes.
+      </p>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300 group">
-        <div class="text-4xl mb-4">🎓</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Students</h4>
-        <p class="text-gray-500 text-sm leading-7">Improve concentration, memory, and exam performance. Yoga Nidra before study = sharper focus. Pranayama reduces exam anxiety naturally. A calm mind absorbs more.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Focus</span><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Memory</span><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Anti-Stress</span></div>
+
+    <!-- Interactive Grid Area -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      
+      <!-- Students -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-pink-100/60 hover:-translate-y-2 transition-all duration-300 group">
+        <div class="text-4xl mb-4">🎓</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Students</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Improve concentration, memory, and exam performance. Yoga Nidra before study = sharper focus. Pranayama reduces exam anxiety naturally. A calm mind absorbs more.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Focus</span>
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Memory</span>
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Anti-Stress</span>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300">
-        <div class="text-4xl mb-4">🧒</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Children</h4>
-        <p class="text-gray-500 text-sm leading-7">Fun, age-appropriate yoga builds coordination, self-esteem, emotional intelligence, and healthy habits. Yoga stories and games make learning joyful and lasting.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Coordination</span><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Confidence</span><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Joy</span></div>
+
+      <!-- Children -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-purple-100/60 hover:-translate-y-2 transition-all duration-300">
+        <div class="text-4xl mb-4">🧒</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Children</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Fun, age-appropriate yoga builds coordination, self-esteem, emotional intelligence, and healthy habits. Yoga stories and games make learning joyful and lasting.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Coordination</span>
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Confidence</span>
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Joy</span>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300">
-        <div class="text-4xl mb-4">👴</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Senior Citizens</h4>
-        <p class="text-gray-500 text-sm leading-7">Gentle yoga improves mobility, balance, and joint health. Reduces risk of falls. Yoga Nidra addresses insomnia and loneliness. Chair yoga available for limited mobility.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Mobility</span><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Balance</span><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Vitality</span></div>
+
+      <!-- Senior Citizens -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-pink-100/60 hover:-translate-y-2 transition-all duration-300">
+        <div class="text-4xl mb-4">👴</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Senior Citizens</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Gentle yoga improves mobility, balance, and joint health. Reduces risk of falls. Yoga Nidra addresses insomnia and loneliness. Chair yoga available for limited mobility.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Mobility</span>
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Balance</span>
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Vitality</span>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300">
-        <div class="text-4xl mb-4">🏃</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Athletes</h4>
-        <p class="text-gray-500 text-sm leading-7">Enhance performance, flexibility, and injury recovery. Yoga Nidra improves sleep quality for faster recovery. Pranayama boosts VO2 max and mental toughness.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Performance</span><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Recovery</span><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Focus</span></div>
+
+      <!-- Athletes -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-purple-100/60 hover:-translate-y-2 transition-all duration-300">
+        <div class="text-4xl mb-4">🏃</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Athletes</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Enhance performance, flexibility, and injury recovery. Yoga Nidra improves sleep quality for faster recovery. Pranayama boosts VO2 max and mental toughness.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Performance</span>
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Recovery</span>
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Focus</span>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-purple-100 hover:-translate-y-2 transition-transform duration-300">
-        <div class="text-4xl mb-4">⚕️</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Doctors &amp; Healthcare</h4>
-        <p class="text-gray-500 text-sm leading-7">Combat burnout, compassion fatigue, and occupational stress. Yoga Nidra in 20 minutes restores mental clarity. Perfect for high-pressure healthcare professionals.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Burnout Relief</span><span class="bg-purple-50 text-[#6C3FC5] text-xs px-3 py-1 rounded-full font-medium">Resilience</span></div>
+
+      <!-- Doctors & Healthcare -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-pink-100/60 hover:-translate-y-2 transition-all duration-300">
+        <div class="text-4xl mb-4">⚕️</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Doctors &amp; Healthcare</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Combat burnout, compassion fatigue, and occupational stress. Yoga Nidra in 20 minutes restores mental clarity. Perfect for high-pressure healthcare professionals.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Burnout Relief</span>
+          <span class="bg-[#E876A0]/10 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Resilience</span>
+        </div>
       </div>
-      <div class="bg-white rounded-3xl p-7 shadow-xl border border-pink-100 hover:-translate-y-2 transition-transform duration-300">
-        <div class="text-4xl mb-4">⚖️</div><h4 class="text-lg font-bold text-[#2d1854] mb-2">Lawyers &amp; Professionals</h4>
-        <p class="text-gray-500 text-sm leading-7">Sharpen analytical thinking, manage work stress, and improve sleep. Yoga cultivates the mental clarity and emotional regulation essential for high-performance careers.</p>
-        <div class="mt-4 flex flex-wrap gap-2"><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Clarity</span><span class="bg-pink-50 text-[#E876A0] text-xs px-3 py-1 rounded-full font-medium">Stress Mgmt</span></div>
+
+      <!-- Lawyers & Professionals -->
+      <div class="bg-white rounded-[32px] p-7 shadow-sm border border-purple-100/60 hover:-translate-y-2 transition-all duration-300">
+        <div class="text-4xl mb-4">⚖️</div>
+        <h4 class="text-xl font-bold text-[#4A1525] mb-2">Lawyers &amp; Professionals</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">Sharpen analytical thinking, manage work stress, and improve sleep. Yoga cultivates the mental clarity and emotional regulation essential for high-performance careers.</p>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Clarity</span>
+          <span class="bg-purple-50 text-[#BD73A4] text-xs px-3 py-1 rounded-full font-medium">Stress Mgmt</span>
+        </div>
       </div>
     </div>
-    <!-- Eligibility -->
-    <div class="bg-gradient-to-r from-[#2d1854] to-[#4a1f8c] rounded-3xl p-10 text-white shadow-2xl">
+
+    <!-- Eligibility Criteria Card -->
+    <div class="bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[32px] p-8 md:p-12 text-white shadow-xl max-w-4xl mx-auto">
       <div class="text-center max-w-2xl mx-auto">
-        <h3 class="text-3xl font-black mb-4">Eligibility Criteria</h3>
-        <p class="text-purple-200 leading-8 mb-8">There is only one prerequisite to join YogaNidra.co.in:</p>
-        <div class="bg-white/10 backdrop-blur rounded-2xl p-8 border border-white/20 text-center">
+        <h3 class="text-3xl font-bold mb-4">Eligibility Criteria</h3>
+        <p class="text-purple-50 font-light leading-relaxed mb-8">There is only one prerequisite to join YogaNidra.co.in:</p>
+        
+        <div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-8 border border-white/20 text-center shadow-inner">
           <div class="text-5xl mb-4">😊</div>
           <h4 class="text-2xl font-bold mb-3">A Positive Attitude</h4>
-          <p class="text-purple-200 leading-8">Come with openness, willingness to learn, and a positive mindset. Yoga meets you exactly where you are. No prior experience required. All ages, all fitness levels welcome.</p>
+          <p class="text-purple-50 font-light leading-relaxed">
+            Come with openness, willingness to learn, and a positive mindset. Yoga meets you exactly where you are. No prior experience required. All ages, all fitness levels welcome.
+          </p>
         </div>
-        <p class="mt-8 text-purple-300 text-sm italic">"यथाशक्ती निरंतर" — As per your capacity, but with consistent dedication. That is all we ask.</p>
+        
+        <p class="mt-8 text-pink-100 text-sm italic font-light tracking-wide">
+          "यथाशक्ती निरंतर" — As per your capacity, but with consistent dedication. That is all we ask.
+        </p>
       </div>
     </div>
+
   </div>
 </section>
 
+<!-- IAYT — YOGA THERAPY SECTION -->
+<section id="iayt" class="py-24 bg-gradient-to-br from-[#FFF9FB] via-[#FBF4FC] to-[#FFF0F5] relative overflow-hidden">
+  
+  <!-- Decorative Background Elements -->
+  <div class="absolute top-0 right-1/4 w-96 h-96 bg-[#E876A0]/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl pointer-events-none"></div>
 
-<!-- IAYT -->
-<section id="iayt" class="py-24 bg-gradient-to-br from-[#FDF9FF] via-[#F3EEFF] to-[#FFF0F8] relative overflow-hidden">
   <div class="max-w-7xl mx-auto px-5">
+    
+    <!-- Simplified Heading Area -->
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-5 py-2 rounded-full text-sm font-semibold mb-4">🏥 Yoga Therapy</span>
-      <h2 class="text-4xl lg:text-5xl font-black text-[#2d1854] mb-4">IAYT — Integrated Approach of <span class="bg-[#6C3FC5] text-white px-4 py-1 rounded-2xl inline-block -rotate-2">Yoga Therapy</span></h2>
-      <p class="text-gray-500 leading-8">IAYT is a holistic therapeutic system that uses the tools of Yoga — asana, pranayama, meditation, relaxation, and lifestyle guidance — to address specific health conditions at their root cause, not just symptoms.</p>
+      <span class="inline-flex items-center gap-2 bg-[#E876A0]/10 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide">
+        🏥 Yoga Therapy
+      </span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-[#4A1525] leading-tight mb-6">
+        IAYT — Integrated Approach of Yoga Therapy
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed font-light">
+        IAYT is a holistic therapeutic system that uses the tools of Yoga — asana, pranayama, meditation, relaxation, and lifestyle guidance — to address specific health conditions at their root cause, not just symptoms.
+      </p>
     </div>
-    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-      <div class="space-y-5">
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl flex-shrink-0">🎯</div><div><h4 class="font-bold text-[#2d1854] mb-2">Root-Cause Approach</h4><p class="text-gray-500 text-sm leading-7">Unlike symptomatic treatment, IAYT identifies and addresses the underlying physical, mental, emotional, and spiritual causes of illness — creating lasting transformation.</p></div></div></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-2xl flex-shrink-0">🧩</div><div><h4 class="font-bold text-[#2d1854] mb-2">Customised Programmes</h4><p class="text-gray-500 text-sm leading-7">Each programme is individually tailored based on health history, constitution (Prakriti), and specific needs. No two plans are identical — truly personalised healing.</p></div></div></div>
-        <div class="bg-white border border-purple-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl flex-shrink-0">🌱</div><div><h4 class="font-bold text-[#2d1854] mb-2">Five Kosha Integration</h4><p class="text-gray-500 text-sm leading-7">IAYT works simultaneously on Annamaya (physical), Pranamaya (energy), Manomaya (mental), Vijnanamaya (wisdom), and Anandamaya (bliss) bodies for complete healing.</p></div></div></div>
-        <div class="bg-white border border-pink-100 rounded-3xl p-7 shadow-lg hover:-translate-y-1 transition-transform"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-pink-100 flex items-center justify-center text-2xl flex-shrink-0">🤝</div><div><h4 class="font-bold text-[#2d1854] mb-2">Adhi &amp; Vyadhi</h4><p class="text-gray-500 text-sm leading-7">Per Yoga Vasistha, disease (Vyadhi) begins in the mind (Adhi). IAYT addresses psychosomatic origins, making it uniquely effective for stress-related modern ailments.</p></div></div></div>
-      </div>
-      <div>
-        <div class="bg-gradient-to-br from-[#6C3FC5] to-[#E876A0] rounded-3xl p-10 text-white shadow-2xl mb-6">
-          <h3 class="text-2xl font-black mb-6">Online &amp; Offline Assistance</h3>
-          <div class="space-y-4">
-            <div class="flex items-center gap-4 bg-white/10 rounded-2xl p-4"><span class="text-2xl">💻</span><div><h5 class="font-bold">Online Sessions</h5><p class="text-white/75 text-sm">Live 1-on-1 and group sessions via video call. Flexible timings for all time zones.</p></div></div>
-            <div class="flex items-center gap-4 bg-white/10 rounded-2xl p-4"><span class="text-2xl">🏫</span><div><h5 class="font-bold">Offline Workshops</h5><p class="text-white/75 text-sm">In-person workshops, retreats, and community sessions in Pune and nearby areas.</p></div></div>
-            <div class="flex items-center gap-4 bg-white/10 rounded-2xl p-4"><span class="text-2xl">💰</span><div><h5 class="font-bold">Flexible Fee Structure</h5><p class="text-white/75 text-sm">Customised pricing based on individual capacity. Yoga should be accessible to all.</p></div></div>
-            <div class="flex items-center gap-4 bg-white/10 rounded-2xl p-4"><span class="text-2xl">⏰</span><div><h5 class="font-bold">Flexible Timing</h5><p class="text-white/75 text-sm">Morning, evening, and weekend slots available. Sessions planned around your schedule.</p></div></div>
+
+    <!-- Main Section Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+      
+      <!-- Left Column: The Four Pillars -->
+      <div class="space-y-6">
+        
+        <!-- Root Cause Approach -->
+        <div class="bg-white border border-pink-100/60 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div class="flex flex-col sm:flex-row items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#E876A0]/10 flex items-center justify-center text-2xl flex-shrink-0">
+              🎯
+            </div>
+            <div>
+              <h4 class="font-bold text-[#4A1525] text-lg mb-2">Root-Cause Approach</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Unlike symptomatic treatment, IAYT identifies and addresses the underlying physical, mental, emotional, and spiritual causes of illness — creating lasting transformation.</p>
+            </div>
           </div>
         </div>
-        <div class="bg-[#2d1854] rounded-3xl p-8 text-white text-center shadow-xl">
-          <div class="text-4xl mb-3">📋</div>
-          <h4 class="text-xl font-bold mb-2">Free Registration Mandatory</h4>
-          <p class="text-purple-200 text-sm leading-7 mb-5">Register once to access all programmes, consultations, and resources. Registration is free and required to ensure personalised attention for every participant.</p>
-          <a href="#register" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#E876A0] to-[#6C3FC5] text-white px-7 py-3 rounded-full font-semibold hover:scale-105 transition-transform">Register Free Now →</a>
+
+        <!-- Customised Programmes -->
+        <div class="bg-white border border-purple-100/60 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div class="flex flex-col sm:flex-row items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-2xl flex-shrink-0">
+              🧩
+            </div>
+            <div>
+              <h4 class="font-bold text-[#4A1525] text-lg mb-2">Customised Programmes</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Each programme is individually tailored based on health history, constitution (Prakriti), and specific needs. No two plans are identical — truly personalised healing.</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Five Kosha Integration -->
+        <div class="bg-white border border-pink-100/60 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div class="flex flex-col sm:flex-row items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#E876A0]/10 flex items-center justify-center text-2xl flex-shrink-0">
+              🌱
+            </div>
+            <div>
+              <h4 class="font-bold text-[#4A1525] text-lg mb-2">Five Kosha Integration</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">IAYT works simultaneously on Annamaya (physical), Pranamaya (energy), Manomaya (mental), Vijnanamaya (wisdom), and Anandamaya (bliss) bodies for complete healing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Adhi & Vyadhi -->
+        <div class="bg-white border border-purple-100/60 rounded-[32px] p-7 shadow-sm hover:-translate-y-1 transition-transform duration-300">
+          <div class="flex flex-col sm:flex-row items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center text-2xl flex-shrink-0">
+              🤝
+            </div>
+            <div>
+              <h4 class="font-bold text-[#4A1525] text-lg mb-2">Adhi &amp; Vyadhi</h4>
+              <p class="text-gray-500 text-sm leading-relaxed">Per Yoga Vasistha, disease (Vyadhi) begins in the mind (Adhi). IAYT addresses psychosomatic origins, making it uniquely effective for stress-related modern ailments.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Right Column: Assistance Details & CTA -->
+      <div class="space-y-6">
+        
+        <!-- Assistance Overview Card -->
+        <div class="bg-gradient-to-br from-[#D37198] via-[#BD73A4] to-[#8F78BC] rounded-[32px] p-8 md:p-10 text-white shadow-xl">
+          <h3 class="text-2xl font-bold mb-6">Online &amp; Offline Assistance</h3>
+          <div class="space-y-4">
+            
+            <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/5">
+              <span class="text-2xl">💻</span>
+              <div>
+                <h5 class="font-bold text-sm">Online Sessions</h5>
+                <p class="text-purple-50 font-light text-xs mt-0.5">Live 1-on-1 and group sessions via video call. Flexible timings for all time zones.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/5">
+              <span class="text-2xl">🏫</span>
+              <div>
+                <h5 class="font-bold text-sm">Offline Workshops</h5>
+                <p class="text-purple-50 font-light text-xs mt-0.5">In-person workshops, retreats, and community sessions in Pune and nearby areas.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/5">
+              <span class="text-2xl">💰</span>
+              <div>
+                <h5 class="font-bold text-sm">Flexible Fee Structure</h5>
+                <p class="text-purple-50 font-light text-xs mt-0.5">Customised pricing based on individual capacity. Yoga should be accessible to all.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/5">
+              <span class="text-2xl">⏰</span>
+              <div>
+                <h5 class="font-bold text-sm">Flexible Timing</h5>
+                <p class="text-purple-50 font-light text-xs mt-0.5">Morning, evening, and weekend slots available. Sessions planned around your schedule.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- Registration Action Card -->
+        <div class="bg-white border border-pink-100 rounded-[32px] p-8 text-center shadow-md">
+          <div class="text-4xl mb-3">📋</div>
+          <h4 class="text-xl font-bold text-[#4A1525] mb-2">Free Registration Mandatory</h4>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">
+            Register once to access all programmes, consultations, and resources. Registration is free and required to ensure personalised attention for every participant.
+          </p>
+          <a href="/contact.html" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#D37198] via-[#BD73A4] to-[#8F78BC] text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+            Register Free Now →
+          </a>
+        </div>
+
+      </div>
+
     </div>
-   
   </div>
 </section>
 
+<!-- FAQS SECTION -->
+<section id="faq" class="py-24 bg-white relative overflow-hidden">
+  
+  <!-- Decorative Accent Blurs -->
+  <div class="absolute top-1/3 left-0 w-72 h-72 bg-[#E876A0]/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-0 w-80 h-80 bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-4xl mx-auto px-5">
+
+    <!-- Premium Heading Area -->
+    <div class="text-center mb-16">
+      <span class="inline-flex items-center gap-2 bg-[#E876A0]/10 text-[#E876A0] px-5 py-2 rounded-full text-sm font-semibold mb-4 tracking-wide">
+        💬 Got Questions?
+      </span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-black">
+        Frequently Asked Questions
+      </h2>
+    </div>
+
+    <!-- FAQ Accordion Container -->
+    <div class="space-y-4">
+
+      <!-- FAQ 1 -->
+      <div class="bg-gray-50 border border-pink-100/80 rounded-3xl transition-all duration-300 overflow-hidden shadow-sm group hover:border-[#E876A0]/40">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center px-6 md:px-8 py-6 text-left text-gray-800 font-semibold text-lg md:text-xl transition-colors hover:text-[#E876A0] focus:outline-none">
+          <span>What is the official contact number of YogaNidra?</span>
+          <span class="faq-icon text-2xl font-light text-[#BD73A4] transition-transform duration-300 pointer-events-none">+</span>
+        </button>
+        <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="px-6 md:px-8 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+            You can contact YogaNidra on <strong class="text-[#E876A0] font-semibold">+91-9876543210</strong> for enquiries, registrations, and course details.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="bg-gray-50 border border-pink-100/80 rounded-3xl transition-all duration-300 overflow-hidden shadow-sm group hover:border-[#E876A0]/40">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center px-6 md:px-8 py-6 text-left text-gray-800 font-semibold text-lg md:text-xl transition-colors hover:text-[#E876A0] focus:outline-none">
+          <span>What is the official email ID of YogaNidra?</span>
+          <span class="faq-icon text-2xl font-light text-[#BD73A4] transition-transform duration-300 pointer-events-none">+</span>
+        </button>
+        <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="px-6 md:px-8 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+            Our official email address is <strong class="text-[#E876A0] font-semibold">info@yoganidra.co.in</strong>.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="bg-gray-50 border border-pink-100/80 rounded-3xl transition-all duration-300 overflow-hidden shadow-sm group hover:border-[#E876A0]/40">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center px-6 md:px-8 py-6 text-left text-gray-800 font-semibold text-lg md:text-xl transition-colors hover:text-[#E876A0] focus:outline-none">
+          <span>Do YogaNidra provide offline or online sessions?</span>
+          <span class="faq-icon text-2xl font-light text-[#BD73A4] transition-transform duration-300 pointer-events-none">+</span>
+        </button>
+        <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+          <div class="px-6 md:px-8 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
+            Yes. We provide both online and offline YogaNidra sessions depending on the programme and location.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Smooth Accordion Script -->
+<script>
+function toggleFaq(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('.faq-icon');
+  const card = button.parentElement;
+
+  // Check if this item is already open
+  const isOpen = !content.classList.contains('max-h-0');
+
+  // Close all other FAQs first for a premium single-open accordion feel
+  document.querySelectorAll('.faq-content').forEach(el => {
+    el.style.maxHeight = null;
+    el.classList.add('max-h-0', 'opacity-0');
+  });
+  document.querySelectorAll('.faq-icon').forEach(el => el.style.transform = 'rotate(0deg)');
+  document.querySelectorAll('#faq .bg-white').forEach(el => {
+    el.classList.replace('bg-white', 'bg-gray-50');
+    el.classList.remove('shadow-md');
+  });
+
+  // Toggle clicked item
+  if (!isOpen) {
+    content.classList.remove('max-h-0', 'opacity-0');
+    content.style.maxHeight = content.scrollHeight + "px";
+    icon.style.transform = 'rotate(45deg)';
+    card.classList.replace('bg-gray-50', 'bg-white');
+    card.classList.add('shadow-md');
+  }
+}
+</script>
 
 
-<!-- FOOTER -->
-<footer class="bg-gradient-to-br from-[#2d1854] to-[#3d1a7a] text-white pt-20 pb-8">
-  <div class="max-w-7xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-      <div class="lg:col-span-2">
-        <img src="./images/logo.png" alt="YogaNidra Logo" class="h-14 mb-5 ">
-        <p class="text-purple-200 leading-8 text-sm mb-5">Founded by Rohini Sanjay Bapat — M.A. Yogashastra, Certified Therapeutic Yoga Consultant (YCB, Ministry of AYUSH). Dedicated to holistic wellbeing through the ancient science of Yoga.</p>
-        <p class="text-[#E876A0] font-semibold italic text-lg">"यथाशक्ती निरंतर"</p>
-        <p class="text-purple-300 text-sm mt-1">As per your capacity, but consistently.</p>
+<!-- CTA & FOOTER COMBINED SECTION -->
+<footer class="relative pt-36 pb-12 overflow-hidden bg-[linear-gradient(135deg,#2F9BE0_0%,#6E7FC4_35%,#8B7ABF_65%,#D779A2_100%)]">
+  
+  <!-- Preserved Original Background Shapes with Custom Floating Animations -->
+  <div class="absolute -left-32 -top-10 w-96 h-96 bg-[#2F9BE0]/70 rounded-[45%] blur-sm animate-drift-slow pointer-events-none"></div>
+  <div class="absolute top-0 left-1/4 w-72 h-72 bg-[#C06D9A]/40 rounded-full animate-drift-medium pointer-events-none"></div>
+  <div class="absolute -right-24 -top-20 w-[420px] h-[320px] bg-[#D779A2]/45 rounded-[45%] animate-drift-fast pointer-events-none"></div>
+  <div class="absolute bottom-0 left-1/3 w-[420px] h-[520px] bg-[#2F9BE0]/35 rounded-full animate-drift-slow pointer-events-none"></div>
+  <div class="absolute bottom-0 right-20 w-[280px] h-[420px] bg-[#D779A2]/35 rounded-full animate-drift-medium pointer-events-none"></div>
+
+  <!-- Smooth Floating Bubbles -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+    <div class="absolute bg-white/15 rounded-full animate-float-slow" style="width: 80px; height: 80px; left: 10%; bottom: -90px; animation-delay: 0s;"></div>
+    <div class="absolute bg-white/15 rounded-full animate-float-medium" style="width: 40px; height: 40px; left: 25%; bottom: -50px; animation-delay: 2s;"></div>
+    <div class="absolute bg-white/15 rounded-full animate-float-fast" style="width: 120px; height: 120px; right: 15%; bottom: -130px; animation-delay: 1s;"></div>
+    <div class="absolute bg-white/15 rounded-full animate-float-slow" style="width: 60px; height: 60px; right: 40%; bottom: -70px; animation-delay: 4s;"></div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
+    
+    <!-- Redesigned CTA Card -->
+    <div class="bg-white rounded-[32px] shadow-xl border border-white/20 p-8 md:p-12 lg:p-14 flex flex-col md:flex-row items-center justify-between gap-8 transform hover:-translate-y-1 transition-all duration-300">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl lg:text-4xl font-light text-gray-800 leading-tight">
+          Wanted to know more? <br class="hidden lg:inline"/>
+          <span class="font-bold text-[#8B7ABF]">Let's connect!</span>
+        </h2>
       </div>
       <div>
-        <h5 class="font-bold text-lg mb-5">Quick Links</h5>
-        <ul class="space-y-3 text-sm text-purple-200">
-          <li><a href="#about" class="hover:text-white transition-colors">About Rohini Bapat</a></li>
-          <li><a href="#yoga-basics" class="hover:text-white transition-colors">What is Yoga?</a></li>
-          <li><a href="#yoga-nidra" class="hover:text-white transition-colors">Yoga Nidra</a></li>
-          <li><a href="#ashtang" class="hover:text-white transition-colors">Ashtang Yoga</a></li>
-          <li><a href="#women" class="hover:text-white transition-colors">Women's Wellness</a></li>
-          <li><a href="#groups" class="hover:text-white transition-colors">For All Groups</a></li>
-          <li><a href="#iayt" class="hover:text-white transition-colors">IAYT Therapy</a></li>
-          <li><a href="navpalavi.html" class="hover:text-white transition-colors">नवपालवी Initiative</a></li>
+        <a href="/contact.html" 
+           class="inline-block bg-gradient-to-r from-[#E876A0] to-[#BD73A4] text-white font-semibold tracking-wide px-14 py-4 rounded-full text-base lg:text-lg shadow-lg hover:shadow-xl hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 text-center whitespace-nowrap">
+          Get a callback
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Grid Structure -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-white/90 mt-24 pt-4 border-t border-white/10">
+      
+      <!-- Brand Identity Column -->
+      <div class="space-y-4">
+        <h3 class="text-3xl font-bold tracking-tight text-white">
+          YogaNidra
+        </h3>
+        <p class="text-sm leading-relaxed text-white/80 max-w-xs">
+          Yoga: An Experiential Science
+        </p>
+      </div>
+
+      <!-- Quick Navigation Column -->
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-6 border-b border-white/10 pb-2 inline-block pr-6">
+          Quick Links
+        </h4>
+        <ul class="space-y-3.5 text-sm">
+          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Website</a></li>
+          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Blogs</a></li>
         </ul>
       </div>
+
+      <!-- Resource Navigation Column -->
       <div>
-        <h5 class="font-bold text-lg mb-5">Connect With Us</h5>
-        <div class="space-y-3 text-sm text-purple-200">
-          <p>📧 info@yoganidra.co.in</p>
-          <p>📞 +91 97694 64033</p>
-          <p>📍 Thane, Maharashtra, India</p>
-          <p class="pt-4">🌐 Online sessions available worldwide</p>
-        </div>
-        <div class="mt-6">
-          <h5 class="font-bold mb-3">Certifications</h5>
-          <div class="space-y-2 text-xs text-purple-300">
-            <p>✔ YCB Certified – Ministry of AYUSH</p>
-            <p>✔ M.A. Yogashastra</p>
-            <p>✔ Ph.D. Scholar – Yogashastra</p>
-            <p>✔ IAYT Certified Yoga Therapist</p>
-          </div>
-        </div>
+        <h4 class="text-lg font-semibold text-white mb-6 border-b border-white/10 pb-2 inline-block pr-6">
+          Resources
+        </h4>
+        <ul class="space-y-3.5 text-sm">
+          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Home</a></li>
+          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">About us</a></li>
+          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Our Journey</a></li>
+        </ul>
+      </div>
+
+      <!-- Operational Contact Column -->
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-6 border-b border-white/10 pb-2 inline-block pr-6">
+          Contact Us
+        </h4>
+        <ul class="space-y-3.5 text-sm text-white/80">
+          <li>+91 97694 64033</li>
+          <li><a href="mailto:rohini@indianngos.com" class="hover:text-white transition-colors break-all">rohini@indianngos.com</a></li>
+          <li>Thane West</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Attribution Area -->
+    <div class="mt-20 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs tracking-wider text-white/50 uppercase">
+      <div>
+        &copy; 2026 YogaNidra. All Rights Reserved.
+      </div>
+      <div>
+        Design &amp; Develop by <a href="#" class="hover:text-white transition-colors font-medium">ReferIndia</a>
       </div>
     </div>
-    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-purple-300">
-      <p>© 2026 YogaNidra.co.in | Rohini Sanjay Bapat. All rights reserved.</p>
-      <p class="italic text-[#E876A0]">"यथाशक्ती निरंतर" 🙏</p>
-    </div>
+
   </div>
 </footer>
 
-<script>
-function handleRegister(e){
-  e.preventDefault();
-  document.querySelector('form').classList.add('hidden');
-  document.getElementById('reg-success').classList.remove('hidden');
+<!-- Smooth Ambient Animations -->
+<style>
+@keyframes drift {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.03); }
 }
-// Init women tab
-switchTab('women','pregnancy');
-// Scroll reveal
-const allReveal=document.querySelectorAll('section');
-const obs=new IntersectionObserver(entries=>{entries.forEach(en=>{if(en.isIntersecting)en.target.style.opacity='1';});},{threshold:0.05});
-allReveal.forEach(el=>{obs.observe(el);});
-// Counter init
-document.querySelectorAll('[data-target]').forEach(el=>countObserver.observe(el));
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-700px) scale(1.2); opacity: 0; }
+}
+.animate-drift-slow { animation: drift 8s ease-in-out infinite; }
+.animate-drift-medium { animation: drift 6s ease-in-out infinite alternate; }
+.animate-drift-fast { animation: drift 4s ease-in-out infinite alternate; }
+.animate-float-slow { animation: floatUp 20s infinite linear; }
+.animate-float-medium { animation: floatUp 15s infinite linear; }
+.animate-float-fast { animation: floatUp 11s infinite linear; }
+</style>
+
+<!-- mobile menu toggle script -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    // Toggle menu visibility on click
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    // Close menu after clicking a link
+    document.querySelectorAll("#mobile-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    });
+
+    // Close menu automatically on scroll
+    window.addEventListener("scroll", () => {
+        if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+        }
+    });
+
+    // Close menu on window resize
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) {
+            mobileMenu.classList.add("hidden");
+        }
+    });
 </script>
 
-<!-- FOOTER PLACEHOLDER -->
-<div id="footer-root"></div>
+<!-- switch js -->
+ <script>
+function switchTab(groupName, tabId) {
+  // 1. Find all buttons and panels that belong to this specific group
+  const buttons = document.querySelectorAll(`[data-tab-group="${groupName}"]`);
+  const panels = document.querySelectorAll(`[data-panel-group="${groupName}"]`);
 
-<script>
-// Scroll reveal
-const revealEls=document.querySelectorAll('.reveal');
-const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});},{threshold:0.1});
-revealEls.forEach(el=>observer.observe(el));
+  // 2. Reset all buttons in this group to the inactive state
+  buttons.forEach(btn => {
+    btn.classList.remove('active', 'bg-gradient-to-r', 'from-[#D37198]', 'to-[#BD73A4]', 'text-white', 'shadow-md');
+    btn.classList.add('border', 'border-gray-200', 'text-gray-600', 'hover:text-[#E876A0]', 'hover:border-[#E876A0]', 'bg-gray-50');
+  });
 
-// Navbar scroll + close mobile menu on scroll
-const nav=document.getElementById('main-nav');
-window.addEventListener('scroll',()=>{
-  if(nav){nav.classList.toggle('shadow-lg',window.scrollY>50);}
-  // Close mobile menu when user scrolls
-  const mobileMenu=document.getElementById('mobile-menu');
-  if(mobileMenu && !mobileMenu.classList.contains('hidden')){
-    mobileMenu.classList.add('hidden');
+  // 3. Find the clicked button and apply the active styles
+  const activeBtn = document.querySelector(`[data-tab-group="${groupName}"][data-tab-id="${tabId}"]`);
+  if (activeBtn) {
+    activeBtn.classList.remove('border', 'border-gray-200', 'text-gray-600', 'hover:text-[#E876A0]', 'hover:border-[#E876A0]', 'bg-gray-50');
+    activeBtn.classList.add('active', 'bg-gradient-to-r', 'from-[#D37198]', 'to-[#BD73A4]', 'text-white', 'shadow-md');
   }
-});
 
-// Hamburger
-function toggleMenu(){const m=document.getElementById('mobile-menu');if(m)m.classList.toggle('hidden');}
-
-// Tabs
-function switchTab(group,id){
-  document.querySelectorAll('[data-tab-group="'+group+'"]').forEach(el=>el.classList.remove('active','bg-[#6C3FC5]','text-white'));
-  document.querySelectorAll('[data-panel-group="'+group+'"]').forEach(el=>el.classList.remove('active'));
-  const btn=document.querySelector('[data-tab-group="'+group+'"][data-tab-id="'+id+'"]');
-  const panel=document.querySelector('[data-panel-group="'+group+'"][data-panel-id="'+id+'"]');
-  if(btn){btn.classList.add('active','bg-[#6C3FC5]','text-white');}
-  if(panel){panel.classList.add('active');}
+  // 4. Hide all content panels in this group and show the matching one
+  panels.forEach(panel => {
+    if (panel.getAttribute('data-panel-id') === tabId) {
+      panel.classList.remove('hidden');
+      panel.classList.add('active'); // Keep active class if your CSS uses it for transitions
+    } else {
+      panel.classList.add('hidden');
+      panel.classList.remove('active');
+    }
+  });
 }
+ </script>
 
-// Counter animation
-function animateCount(el){
-  const target=parseInt(el.getAttribute('data-target'));
-  let count=0;const step=Math.ceil(target/60);
-  const timer=setInterval(()=>{count=Math.min(count+step,target);el.textContent=count+(el.getAttribute('data-suffix')||'');if(count>=target)clearInterval(timer);},30);
-}
-const countObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.counted){e.target.dataset.counted=true;animateCount(e.target);}});},{threshold:0.5});
-document.querySelectorAll('[data-target]').forEach(el=>countObserver.observe(el));
-</script>
+<!-- AOS Animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<!-- AOS -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-function toggleYogaDropdown() {
-    const dropdown = document.getElementById("yogaDropdown");
-    const arrow = document.getElementById("yogaArrow");
-
-    dropdown.classList.toggle("hidden");
-    arrow.classList.toggle("rotate-180");
-}
+  AOS.init({
+    once: true, // Only animates once when scrolling down
+  });
 </script>
 
+<!-- navbar scroll white -->
+<script>
+const navbar = document.getElementById("navbar");
+const logo = document.getElementById("logo");
+const navLinks = document.querySelectorAll(".nav-link");
+// Target the three span bars inside the mobile menu button
+const menuBtnBars = document.querySelectorAll("#menu-btn span");
+// Target the desktop contact button
+const contactBtn = document.getElementById("contact-btn");
 
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        navbar.classList.remove("bg-[#D37198]");
+        navbar.classList.add("bg-white", "shadow-lg");
+
+        logo.classList.remove("text-white");
+        logo.classList.add("text-[#D37198]");
+
+        // Change mobile menu button bars to pink on scroll
+        menuBtnBars.forEach(bar => {
+            bar.classList.remove("bg-white");
+            bar.classList.add("bg-[#D37198]");
+        });
+
+        // SCROLL DOWN: Contact button becomes pink with white text
+        if (contactBtn) {
+            contactBtn.classList.remove("bg-white", "text-[#D37198]", "hover:bg-purple-50");
+            contactBtn.classList.add("bg-[#E876A0]", "text-white", "hover:bg-[#D37198]");
+        }
+
+        navLinks.forEach(link => {
+            link.classList.remove("text-white");
+            link.classList.add("text-gray-700");
+
+            link.onmouseenter = () => link.classList.add("text-[#D37198]");
+            link.onmouseleave = () => {
+                link.classList.remove("text-[#D37198]");
+                link.classList.add("text-gray-700");
+            };
+        });
+
+    } else {
+
+        navbar.classList.remove("bg-white", "shadow-lg");
+        navbar.classList.add("bg-[#D37198]");
+
+        logo.classList.remove("text-[#D37198]");
+        logo.classList.add("text-white");
+
+        // Change mobile menu button bars back to white when at top
+        menuBtnBars.forEach(bar => {
+            bar.classList.remove("bg-[#D37198]");
+            bar.classList.add("bg-white");
+        });
+
+        // AT TOP: Contact button returns to white with pink text
+        if (contactBtn) {
+            contactBtn.classList.remove("bg-[#E876A0]", "text-white", "hover:bg-[#D37198]");
+            contactBtn.classList.add("bg-white", "text-[#D37198]", "hover:bg-purple-50");
+        }
+
+        navLinks.forEach(link => {
+            link.classList.remove("text-gray-700");
+            link.classList.add("text-white");
+
+            link.onmouseenter = () => link.classList.add("text-purple-200");
+            link.onmouseleave = () => {
+                link.classList.remove("text-purple-200");
+                link.classList.add("text-white");
+            };
+        });
+
+    }
+
+});
+</script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919769464033?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20YogaNidra%20sessions." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-[#20ba59] transition-all flex items-center justify-center w-14 h-14" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.788 2.016 14.316.99 11.993.99c-5.442 0-9.87 4.372-9.874 9.802-.001 1.768.472 3.49 1.37 5.031L2.24 21.092l5.407-1.417zM17.07 14.673c-.274-.137-1.62-.799-1.87-.891-.25-.092-.433-.137-.615.137-.183.275-.707.891-.867 1.074-.16.183-.32.206-.594.069-.273-.137-1.157-.426-2.202-1.359-.815-.728-1.365-1.627-1.526-1.901-.16-.274-.017-.422.12-.559.123-.123.274-.32.411-.48.137-.16.183-.274.274-.457.091-.183.046-.343-.023-.48-.069-.137-.615-1.486-.842-2.035-.22-.53-.443-.457-.615-.466-.16-.008-.343-.01-.525-.01-.183 0-.479.069-.73.343-.25.274-.958.937-.958 2.285 0 1.348.981 2.651 1.118 2.834.137.183 1.93 2.946 4.677 4.131.654.282 1.165.45 1.564.577.657.208 1.256.179 1.728.109.526-.078 1.62-.662 1.849-1.28.228-.617.228-1.143.16-1.28-.069-.137-.251-.22-.525-.357z"/>
+    </svg>
+  </a>
+
+<!-- Multi-language support -->
+<script src="lang.js"></script>
 </body>
 </html>

@@ -1,569 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>नवपालवी – Navpalavi | परिपूर्ण गर्भसंस्कार | YogaNidra.co.in</title>
-<meta name="description" content="नवपालवी – A new initiative by Rohini Bapat and Dr. Madhura Kulkarni for holistic pregnancy wellness including yoga, ayurveda, garbha sanskar and more.">
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-body{font-family:'Poppins',sans-serif;overflow-x:hidden;}
-::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#9B72EF;border-radius:10px}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
-@keyframes floatSlow{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
-.fade-up{animation:fadeUp .8s ease forwards}
-.float{animation:float 5s ease-in-out infinite}
-.float-slow{animation:floatSlow 7s ease-in-out infinite}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>नवपालवी – Navpalavi | परिपूर्ण गर्भसंस्कार | YogaNidra.co.in</title>
+  <meta name="description" content="नवपालवी – A new initiative by Rohini Bapat and Dr. Madhura Kulkarni for holistic pregnancy wellness including yoga, ayurveda, garbha sanskar and more.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandRose: '#D37198',
+            brandPink: '#BD73A4',
+            brandPurple: '#8F78BC',
+            brandLight: '#fdf5f8',
+            coralStart: '#D37198',
+            coralEnd: '#BD73A4',
+            skyBg: '#ffffff'
+          },
+          fontFamily: {
+            sans: ['Lato', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Fonts & AOS Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D37198;
+      border-radius: 10px;
+    }
+  </style>
 </head>
-<body class="bg-[#FDF9FF] text-white">
-
-<!-- NAVBAR -->
-<nav class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200">
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-        <div class="h-16 md:h-[68px] flex items-center justify-between">
-
-            <!-- Logo -->
-            <a href="index.html" class="flex-shrink-0">
-                <img src="./images/logo.png"
-                     alt="Logo"
-                     class="h-11 sm:h-10 md:h-12">
-            </a>
-
-            <!-- Right Side -->
-            <div class="flex items-center gap-2 sm:gap-3 md:gap-5">
-
-                <a href="/contact.html"
-                   class="bg-gradient-to-r from-[#D4A843] to-[#f0c060]
-                          text-[#1a1060]
-                          px-3 sm:px-5 md:px-6
-                          py-2 sm:py-2.5
-                          rounded-full
-                          text-xs sm:text-sm
-                          font-bold
-                          whitespace-nowrap
-                          hover:scale-105
-                          transition">
-                    Join Programme
-                </a>
-
-                <a href="index.html"
-                   class="text-gray-700 hover:text-blue-700
-                          text-xs sm:text-sm
-                          font-medium
-                          whitespace-nowrap">
-                    ← <span class="hidden sm:inline">Back to Home</span>
-                    <span class="sm:hidden">Home</span>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</nav>
-
-<!-- HERO -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#FDF9FF]">
-
-    <!-- Custom CSS for Moving Crystals -->
-    <style>
-        @keyframes float-slow {
-            0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
-            50% { transform: translateY(-30px) rotate(180deg) scale(1.15); }
-        }
-        @keyframes float-reverse {
-            0%, 100% { transform: translateY(0) rotate(360deg) scale(1.1); }
-            50% { transform: translateY(40px) rotate(180deg) scale(0.9); }
-        }
-        @keyframes float-mid {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            50% { transform: translate(25px, -25px) rotate(90deg); }
-        }
-        .animate-crystal-1 { animation: float-slow 12s ease-in-out infinite; }
-        .animate-crystal-2 { animation: float-reverse 16s ease-in-out infinite; }
-        .animate-crystal-3 { animation: float-mid 10s ease-in-out infinite; }
-    </style>
-
-    <!-- Background Decoration -->
-    <div class="absolute -top-32 -left-32 w-64 h-64 md:w-[500px] md:h-[500px] bg-purple-200/40 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-16 right-0 w-56 h-56 md:w-[450px] md:h-[450px] bg-pink-200/40 rounded-full blur-3xl"></div>
-    <div class="absolute top-1/3 left-1/2 w-24 h-24 md:w-40 md:h-40 bg-[#E876A0]/10 rounded-full blur-3xl"></div>
-
-    <!-- Moving Floating Crystals (Added Background Layer) -->
-    <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        <!-- Purple Crystal Left -->
-        <div class="absolute top-[25%] left-[8%] w-8 h-12 md:w-12 md:h-20 bg-gradient-to-br from-[#6C3FC5]/20 to-[#6C3FC5]/5 clip-path-crystal blur-[2px] animate-crystal-1" style="clip-path: polygon(50% 0%, 100% 35%, 100% 70%, 50% 100%, 0% 70%, 0% 35%);"></div>
-        <!-- Pink Crystal Right -->
-        <div class="absolute top-[40%] right-[10%] w-10 h-16 md:w-16 md:h-24 bg-gradient-to-br from-[#E876A0]/20 to-[#E876A0]/5 clip-path-crystal blur-[1px] animate-crystal-2" style="clip-path: polygon(50% 0%, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);"></div>
-        <!-- Yellow Crystal Bottom Left -->
-        <div class="absolute bottom-[20%] left-[12%] w-7 h-10 md:w-10 md:h-16 bg-gradient-to-br from-[#D4A843]/20 to-[#D4A843]/5 clip-path-crystal blur-[1px] animate-crystal-3" style="clip-path: polygon(50% 0%, 100% 35%, 100% 65%, 50% 100%, 0% 65%, 0% 35%);"></div>
-        <!-- Small Purple Crystal Top Right -->
-        <div class="absolute top-[15%] right-[20%] w-6 h-9 bg-gradient-to-br from-[#6C3FC5]/15 to-transparent clip-path-crystal animate-crystal-3" style="clip-path: polygon(50% 0%, 100% 30%, 100% 70%, 50% 100%, 0% 70%, 0% 30%);"></div>
-        <!-- Small Pink Crystal Center Left -->
-        <div class="absolute top-[60%] left-[22%] w-6 h-10 bg-gradient-to-br from-[#E876A0]/15 to-transparent clip-path-crystal animate-crystal-1" style="clip-path: polygon(50% 0%, 100% 35%, 100% 70%, 50% 100%, 0% 70%, 0% 35%);"></div>
-    </div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-5 py-16 md:py-24 w-full">
-
-        <div class="text-center max-w-5xl mx-auto">
-
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-semibold mb-6 shadow">
-                🌱 New Initiative
-            </div>
-
-            <!-- Heading -->
-            <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-[#2d1854] leading-tight">
-                नवपालवी
-            </h1>
-
-            <div class="text-3xl md:text-4xl mt-3 mb-4">
-                🌱🧘🏻‍♀️🤰
-            </div>
-
-            <h2 class="text-xl sm:text-2xl md:text-4xl font-bold text-[#D4A843] mb-5">
-                🌸 परिपूर्ण गर्भसंस्कार 🌸
-            </h2>
-
-            <p class="text-base md:text-xl text-gray-600 mb-10">
-                Together for a Better Future
-            </p>
-
-            <!-- Card -->
-            <div class="relative max-w-3xl mx-auto">
-
-                <div class="absolute -inset-2 md:-inset-3 bg-gradient-to-r from-purple-200/40 via-pink-200/40 to-yellow-100/40 rounded-[30px] md:rounded-[42px] blur-3xl"></div>
-
-                <div class="relative bg-white/90 backdrop-blur-2xl border border-white shadow-[0_20px_60px_rgba(108,63,197,.15)] rounded-[24px] md:rounded-[36px] overflow-hidden">
-
-                    <div class="h-2 bg-gradient-to-r from-[#6C3FC5] via-[#E876A0] to-[#D4A843]"></div>
-
-                    <div class="p-6 sm:p-8 md:p-12">
-
-                        <!-- Quote -->
-                        <div class="text-5xl md:text-7xl text-[#E876A0]/20 leading-none font-serif mb-2">
-                            “
-                        </div>
-
-                        <!-- Greeting -->
-                        <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#2d1854] mb-5">
-                            प्रिय होणाऱ्या आई-बाबांनो,
-                        </h3>
-
-                        <!-- Intro -->
-                        <p class="text-gray-600 text-base md:text-lg leading-7 md:leading-9 mb-8">
-                            उद्या आपल्या जीवनातील एका सुंदर,
-                            आध्यात्मिक आणि आनंदमय प्रवासाला
-                            सुरुवात होत आहे.
-                        </p>
-
-                        <!-- Highlight -->
-                        <div class="relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-r from-[#FFF8E6] via-[#FFF4D2] to-[#FFEFC5] border border-[#F4D68A] p-5 md:p-8">
-
-                            <div class="absolute -top-8 -right-8 w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#D4A843]/10"></div>
-
-                            <div class="relative flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
-
-                                <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center text-3xl flex-shrink-0">
-                                    ✈️
-                                </div>
-
-                                <div>
-
-                                    <h4 class="text-lg md:text-xl font-bold text-[#7B5B00] mb-3">
-                                        Our Journey Begins
-                                    </h4>
-
-                                    <p class="text-[#6B5500] text-sm md:text-lg leading-7">
-                                        Our flight takes off towards a
-                                        <strong>healthy pregnancy</strong>,
-                                        a <strong>happy family</strong>,
-                                        and a
-                                        <strong>brighter future generation.</strong>
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- Bottom Badge -->
-                        <div class="mt-8 flex justify-center">
-
-                            <div class="px-4 md:px-6 py-3 rounded-full bg-gradient-to-r from-[#6C3FC5]/10 to-[#E876A0]/10 border border-purple-100">
-
-                                <span class="text-[#6C3FC5] text-sm md:text-base font-semibold">
-                                    🌸 Together for a Better Future 🌸
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-
-                <a href="/contact.html"
-                   class="w-full sm:w-auto text-center bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 transition">
-                    Join Our Journey →
-                </a>
-
-                <a href="#programme"
-                   class="w-full sm:w-auto text-center border-2 border-[#6C3FC5] text-[#6C3FC5] px-8 py-4 rounded-full font-semibold hover:bg-[#6C3FC5] hover:text-white transition">
-                    View Programme
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- COLLABORATION -->
-<section class="py-16 md:py-24 bg-[#FDF9FF] relative overflow-hidden">
-
-    <!-- Background Decorations -->
-    <div class="absolute -top-16 -left-16 w-52 h-52 md:w-80 md:h-80 bg-purple-100/50 rounded-full blur-3xl"></div>
-    <div class="absolute -bottom-16 right-0 w-60 h-60 md:w-96 md:h-96 bg-pink-100/50 rounded-full blur-3xl"></div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-        <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-
-            <span class="inline-flex items-center gap-2 bg-purple-100 text-[#6C3FC5] px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold mb-5">
-                🤝 Expert Collaboration
-            </span>
-
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#2d1854] mb-5 leading-tight">
-                A Powerful
-                <span class="bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] bg-clip-text text-transparent">
-                    Collaboration
-                </span>
-            </h2>
-
-            <p class="text-base md:text-lg text-gray-600 leading-7 md:leading-8">
-                Two experienced professionals combining Yoga and Ayurveda to
-                provide holistic care for pregnancy, motherhood and women's
-                overall wellness.
-            </p>
-
-        </div>
-
-        <!-- Cards -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-
-            <!-- Rohini -->
-            <div class="relative bg-gradient-to-br from-[#6C3FC5] to-[#8A5DE8] rounded-3xl p-6 sm:p-8 md:p-10 text-white shadow-[0_20px_50px_rgba(108,63,197,.25)] overflow-hidden hover:-translate-y-2 transition duration-500">
-
-                <div class="absolute -top-10 -right-10 w-28 h-28 md:w-40 md:h-40 bg-white/10 rounded-full blur-2xl"></div>
-
-                <div class="relative z-10">
-
-                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-white/15 backdrop-blur flex items-center justify-center text-3xl md:text-4xl mb-6">
-                        🧘
-                    </div>
-
-                    <h3 class="text-2xl md:text-3xl font-bold mb-2">
-                        Rohini Sanjay Bapat
-                    </h3>
-
-                    <p class="text-purple-100 text-sm md:text-base font-semibold mb-5">
-                        Yoga Expert • Therapeutic Yoga Consultant
-                    </p>
-
-                    <div class="space-y-3 text-sm md:text-base text-white/90 leading-7">
-
-                        <p>✔ M.A. Yogashastra</p>
-
-                        <p>✔ YCB Certified Therapeutic Yoga Consultant (Ministry of AYUSH)</p>
-
-                        <p>✔ Ph.D. Scholar – Yogashastra</p>
-
-                        <p>✔ 10+ Years of Experience</p>
-
-                        <p>
-                            Specialises in Yoga Nidra, Prenatal Yoga,
-                            Pranayama, Meditation and Holistic Lifestyle
-                            Management.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Madhura -->
-            <div class="relative bg-gradient-to-br from-[#E876A0] to-[#F49CBC] rounded-3xl p-6 sm:p-8 md:p-10 text-white shadow-[0_20px_50px_rgba(232,118,160,.25)] overflow-hidden hover:-translate-y-2 transition duration-500">
-
-                <div class="absolute -bottom-10 -left-10 w-28 h-28 md:w-40 md:h-40 bg-white/10 rounded-full blur-2xl"></div>
-
-                <div class="relative z-10">
-
-                    <div class="w-16 h-16 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-white/15 backdrop-blur flex items-center justify-center text-3xl md:text-4xl mb-6">
-                        🌿
-                    </div>
-
-                    <h3 class="text-2xl md:text-3xl font-bold mb-2">
-                        Dr. Madhura Kulkarni
-                    </h3>
-
-                    <p class="text-pink-100 text-sm md:text-base font-semibold mb-5">
-                        Ayurvedic Gynaecologist
-                    </p>
-
-                    <div class="space-y-3 text-sm md:text-base text-white/90 leading-7">
-
-                        <p>✔ Specialist in Ayurvedic Gynaecology & Obstetrics</p>
-
-                        <p>✔ Expert in Garbhini Paricharya</p>
-
-                        <p>✔ Evidence-Based Ayurvedic Pregnancy Care</p>
-
-                        <p>
-                            Integrating traditional Ayurvedic wisdom with
-                            modern healthcare to support healthy mothers
-                            and healthy babies.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Bottom Highlight -->
-        <div class="mt-10 md:mt-14 bg-white rounded-3xl border border-purple-100 shadow-xl p-6 md:p-8 text-center">
-
-            <h3 class="text-xl md:text-2xl font-bold text-[#2d1854] mb-4">
-                🌸 Together We Offer
-            </h3>
-
-            <p class="text-sm md:text-lg text-gray-600 leading-7 md:leading-8 max-w-4xl mx-auto">
-                A unique holistic programme that combines the therapeutic
-                benefits of <strong>Yoga, Yoga Nidra, Pranayama</strong> and
-                <strong>Ayurvedic prenatal care</strong>, supporting women
-                physically, mentally, emotionally and spiritually throughout
-                pregnancy and beyond.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PROGRAMME -->
-<section id="programme" class="relative overflow-hidden bg-[#0F1B35] py-16 md:py-24">
-
-    <!-- Background -->
-    <div class="absolute top-0 right-0 w-52 h-52 md:w-96 md:h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-
-        <!-- Heading -->
-        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-tight mb-5">
-                What You Will
-                <span class="text-[#E876A0]">Experience</span>
-            </h2>
-
-            <p class="text-white/70 text-base md:text-lg leading-7 md:leading-8">
-                A complete, holistic programme for the mind, body, and soul
-                of mother, father, and baby.
-            </p>
-
-        </div>
-
-        <!-- Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-
-            <!-- Card -->
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#6C3FC5]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🧘</div>
-                <h4 class="text-xl font-bold text-white mb-3">योग (Yoga)</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Safe, trimester-specific asana sequences for strength,
-                    flexibility, and birth preparation. Breath-body
-                    connection practices for labour readiness.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#D4A843]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🌿</div>
-                <h4 class="text-xl font-bold text-white mb-3">आयुर्वेद (Ayurveda)</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Garbhini Paricharya, herbal nutrition, lifestyle
-                    adjustments and Ayurvedic massage techniques for every
-                    trimester.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#E876A0]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🥗</div>
-                <h4 class="text-xl font-bold text-white mb-3">पोषण (Nutrition)</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Evidence-based prenatal nutrition guidance combining
-                    Sattvic diet principles with modern nutritional science.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#6C3FC5]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🤲</div>
-                <h4 class="text-xl font-bold text-white mb-3">मुद्रा (Mudra)</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Therapeutic hand gestures such as Yoni Mudra, Apana
-                    Mudra and Prithvi Mudra for prenatal health.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#D4A843]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">💬</div>
-                <h4 class="text-xl font-bold text-white mb-3">समुपदेशन (Counselling)</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Individual and group counselling sessions to reduce
-                    anxiety, build confidence and emotional wellbeing.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#E876A0]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">👫</div>
-                <h4 class="text-xl font-bold text-white mb-3">Partner Counselling</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Sessions helping fathers-to-be provide emotional
-                    support, bonding and create a nurturing family.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#6C3FC5]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🧠</div>
-                <h4 class="text-xl font-bold text-white mb-3">Multiple Intelligence</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Activities using music, stories and mindful interaction
-                    to stimulate the baby's overall development.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#D4A843]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🌟</div>
-                <h4 class="text-xl font-bold text-white mb-3">Positive Affirmations</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Daily affirmations that create confidence, positivity
-                    and emotional resilience throughout pregnancy.
-                </p>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-3xl p-6 md:p-7 hover:border-[#E876A0]/50 hover:-translate-y-2 transition duration-300">
-                <div class="text-4xl mb-4">🎵</div>
-                <h4 class="text-xl font-bold text-white mb-3">Music & Garbha Sangeet</h4>
-                <p class="text-white/65 text-sm md:text-base leading-7">
-                    Classical ragas, soothing mantras and Garbha Sangeet
-                    promoting peace for mother and baby.
-                </p>
-            </div>
-
-        </div>
-
-        <!-- CTA Card -->
-        <div class="mt-10 md:mt-14 bg-gradient-to-r from-[#6C3FC5] to-[#E876A0] rounded-3xl p-6 sm:p-8 md:p-14 text-center shadow-2xl">
-
-            <h3 class="text-2xl md:text-3xl font-black text-white mb-4">
-                ध्यान, संस्कार & सकारात्मक जीवनदृष्टी
-            </h3>
-
-            <p class="text-white/85 text-sm md:text-lg leading-7 md:leading-8 max-w-3xl mx-auto mb-8">
-                Meditation, positive cultural imprinting and a life-affirming
-                worldview. This is not just a pregnancy class—it is a complete
-                journey of transformation for mother, father and baby.
-            </p>
-
-            <p class="text-xl md:text-2xl font-bold text-[#D4A843]">
-                💛 All set? Welcome aboard!
-            </p>
-
-            <p class="text-white/70 mt-3 text-sm md:text-base leading-7">
-                चला, प्रेम, ज्ञान आणि सकारात्मक ऊर्जेने भरलेल्या या प्रवासाला
-                एकत्र सुरुवात करूया.
-            </p>
-
-            <a href="/contact.html"
-               class="mt-8 inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-gradient-to-r from-[#D4A843] to-[#f0c060] text-[#1a1060] px-8 md:px-10 py-3 md:py-4 rounded-full font-bold text-base md:text-lg shadow-xl hover:scale-105 transition">
-                ✈️ Register for नवपालवी
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="bg-gradient-to-br from-[#2d1854] to-[#3d1a7a] text-white pt-20 pb-8">
-  <div class="max-w-7xl mx-auto px-5">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-      <div class="lg:col-span-2">
-        <img src="./images/logo.png" alt="YogaNidra Logo" class="h-14 mb-5 ">
-        <p class="text-purple-200 leading-8 text-sm mb-5">Founded by Rohini Sanjay Bapat — M.A. Yogashastra, Certified Therapeutic Yoga Consultant (YCB, Ministry of AYUSH). Dedicated to holistic wellbeing through the ancient science of Yoga.</p>
-        <p class="text-[#E876A0] font-semibold italic text-lg">"यथाशक्ती निरंतर"</p>
-        <p class="text-purple-300 text-sm mt-1">As per your capacity, but consistently.</p>
+<body class="bg-gray-50/50 text-gray-800 antialiased font-sans min-h-screen relative">
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-pink-100/60 py-3.5 shadow-sm">
+    <div class="max-w-7xl mx-auto px-5 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#E876A0] to-[#D37198]">YogaNidra</a>
+      <div class="flex items-center gap-5">
+        <!-- Language Switcher -->
+        <div id="lang-switcher-slot"></div>
+        <a href="/contact.html" class="bg-gradient-to-r from-[#E876A0] to-[#D37198] text-white hover:opacity-90 hover:scale-[1.03] px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-md shadow-pink-500/10">Join Programme</a>
+        <a href="index.html" class="text-gray-600 hover:text-[#D37198] text-sm font-semibold transition-colors">← Back to Home</a>
       </div>
-      <div>
-        <h5 class="font-bold text-lg mb-5">Quick Links</h5>
-        <ul class="space-y-3 text-sm text-purple-200">
-          <li><a href="#about" class="hover:text-white transition-colors">About Rohini Bapat</a></li>
-          <li><a href="#yoga-basics" class="hover:text-white transition-colors">What is Yoga?</a></li>
-          <li><a href="#yoga-nidra" class="hover:text-white transition-colors">Yoga Nidra</a></li>
-          <li><a href="#ashtang" class="hover:text-white transition-colors">Ashtang Yoga</a></li>
-          <li><a href="#women" class="hover:text-white transition-colors">Women's Wellness</a></li>
-          <li><a href="#groups" class="hover:text-white transition-colors">For All Groups</a></li>
-          <li><a href="#iayt" class="hover:text-white transition-colors">IAYT Therapy</a></li>
-          <li><a href="navpalavi.html" class="hover:text-white transition-colors">नवपालवी Initiative</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5 class="font-bold text-lg mb-5">Connect With Us</h5>
-        <div class="space-y-3 text-sm text-purple-200">
-          <p>📧 info@yoganidra.co.in</p>
-          <p>📞 +91 97694 64033</p>
-          <p>📍 Thane, Maharashtra, India</p>
-          <p class="pt-4">🌐 Online sessions available worldwide</p>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-gradient-to-tr from-pink-50/60 via-white to-pink-50/40">
+    <!-- Soft Ambient Pink Orbs instead of dark stars -->
+    <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-[#E876A0]/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-[#D37198]/10 rounded-full blur-[100px] pointer-events-none"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-5 w-full">
+      <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
+        <div class="inline-flex items-center gap-2 bg-white border border-pink-100 text-[#D37198] px-5 py-2 rounded-full text-xs sm:text-sm font-semibold mb-8 shadow-sm">🌱 New Initiative 2026</div>
+        
+        <h1 class="text-5xl sm:text-6xl md:text-8xl font-black mb-4 leading-tight text-gray-950">
+          नवपालवी<br><span class="text-3xl sm:text-4xl md:text-5xl inline-block mt-2">🌱🧘🏻‍♀️🤰</span>
+        </h1>
+        
+        <div class="text-xl sm:text-2xl md:text-3xl font-black text-[#D37198] mb-3 tracking-wide">🌸 परिपूर्ण गर्भसंस्कार 🌸</div>
+        <p class="text-lg sm:text-xl text-gray-500 font-medium mb-8">Together for a Better Future</p>
+        
+        <div class="bg-white border border-pink-50 rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto mb-10 text-left shadow-xl shadow-pink-900/5">
+          <p class="text-gray-800 font-bold leading-8 mb-3 text-lg">प्रिय होणाऱ्या आई-बाबांनो,</p>
+          <p class="text-gray-600 leading-8 mb-4">उद्या आपल्या जीवनातील एका सुंदर, आध्यात्मिक आणि आनंदमय प्रवासाला सुरुवात होत आहे.</p>
+          <p class="text-[#D37198] font-bold text-base sm:text-lg bg-pink-50/50 p-4 rounded-xl border border-pink-100/50">
+            ✈️ Our flight takes off for a journey towards a healthy pregnancy, a happy family, and a brighter future generation.
+          </p>
         </div>
-        <div class="mt-6">
-          <h5 class="font-bold mb-3">Certifications</h5>
-          <div class="space-y-2 text-xs text-purple-300">
-            <p>✔ YCB Certified – Ministry of AYUSH</p>
-            <p>✔ M.A. Yogashastra</p>
-            <p>✔ Ph.D. Scholar – Yogashastra</p>
-            <p>✔ IAYT Certified Yoga Therapist</p>
-          </div>
+        
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/contact.html" class="bg-gradient-to-r from-[#E876A0] via-[#D37198] to-[#E876A0] text-white px-8 py-3.5 rounded-xl font-bold text-base sm:text-lg shadow-lg shadow-pink-500/20 hover:scale-[1.03] transition-all">✈️ Join Our Journey</a>
+          <a href="#programme" class="bg-white border border-gray-200 text-gray-700 px-8 py-3.5 rounded-xl font-bold hover:bg-gray-50 transition shadow-sm">See Programme →</a>
         </div>
       </div>
     </div>
-    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-purple-300">
-      <p>© 2026 YogaNidra.co.in | Rohini Sanjay Bapat. All rights reserved.</p>
-      <p class="italic text-[#E876A0]">"यथाशक्ती निरंतर" 🙏</p>
-    </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- COLLABORATION -->
+  <section class="py-24 bg-white relative overflow-hidden border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 text-gray-900">A Powerful <span class="bg-gradient-to-r from-[#E876A0] to-[#D37198] bg-clip-text text-transparent">Collaboration</span></h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mx-auto mb-6 rounded"></div>
+        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+          Two expert practitioners uniting to offer the most comprehensive pregnancy wellness programme in India.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-50/60 border border-pink-50/80 rounded-2xl p-8 sm:p-10 hover:bg-white hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300" data-aos="fade-right">
+          <div class="w-16 h-16 rounded-2xl bg-pink-50 flex items-center justify-center text-3xl mb-6 border border-pink-100/50 text-[#D37198]">🧘</div>
+          <h3 class="text-2xl font-black text-gray-900 mb-2">Rohini Sanjay Bapat</h3>
+          <p class="text-[#D37198] font-bold mb-4 text-sm tracking-wide uppercase">Yoga Expert & Therapist</p>
+          <p class="text-gray-600 leading-relaxed text-sm">
+            M.A. Yogashastra | YCB Certified Therapeutic Yoga Consultant (Ministry of AYUSH) | Ph.D. Scholar | 10+ years guiding mothers through prenatal yoga, Yoga Nidra, Pranayama, and holistic wellness.
+          </p>
+        </div>
+        <div class="bg-gray-50/60 border border-pink-50/80 rounded-2xl p-8 sm:p-10 hover:bg-white hover:shadow-xl hover:shadow-pink-900/5 transition-all duration-300" data-aos="fade-left">
+          <div class="w-16 h-16 rounded-2xl bg-pink-50 flex items-center justify-center text-3xl mb-6 border border-pink-100/50 text-[#D37198]">🌿</div>
+          <h3 class="text-2xl font-black text-gray-900 mb-2">Dr. Madhura Kulkarni</h3>
+          <p class="text-[#D37198] font-bold mb-4 text-sm tracking-wide uppercase">Ayurvedic Gynaecologist</p>
+          <p class="text-gray-600 leading-relaxed text-sm">
+            Specialist in Ayurvedic Gynaecology and Obstetrics | Expert in Garbhini Paricharya (prenatal Ayurvedic care) | Integrating ancient wisdom with modern evidence-based protocols for mother and baby.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMME -->
+  <section id="programme" class="py-24 bg-gray-50/40 relative overflow-hidden border-t border-gray-100">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[#E876A0]/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 text-gray-900">What You Will <span class="bg-gradient-to-r from-[#E876A0] to-[#D37198] bg-clip-text text-transparent">Experience</span></h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mx-auto mb-6 rounded"></div>
+        <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
+          A complete, holistic programme for the mind, body, and soul of mother, father, and baby.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Experience Items -->
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="50">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">🧘</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">योग (Yoga)</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Safe, trimester-specific asana sequences for strength, flexibility, and birth preparation. Breath-body connection.</p>
+        </div>
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">🌿</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">आयुर्वेद (Ayurveda)</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Garbhini Paricharya — ancient Ayurvedic protocols for each trimester. Herbal nutrition and lifestyle adjustments.</p>
+        </div>
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">🥗</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">पोषण (Nutrition)</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Evidence-based prenatal nutrition. Sattvic diet principles combined with modern science for optimal foetal growth.</p>
+        </div>
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">🤲</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">मुद्रा (Mudra)</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Therapeutic hand gestures to balance energy channels. Yoni Mudra, Apana Mudra, and Prithvi Mudra.</p>
+        </div>
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="250">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">💬</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">समुपदेशन (Counselling)</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Individual and group sessions addressing fears and emotional challenges of pregnancy. Building inner strength.</p>
+        </div>
+        <div class="bg-white border border-pink-50/50 rounded-2xl p-6 hover:shadow-xl hover:shadow-pink-900/5 hover:border-pink-100 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 bg-pink-50/60 text-[#D37198] rounded-xl flex items-center justify-center text-2xl mb-4">👫</div>
+          <h4 class="font-bold text-gray-900 text-lg mb-2">Partner Counselling</h4>
+          <p class="text-gray-600 text-sm leading-relaxed">Involving partners in the journey. Sessions for fathers-to-be on bonding and building a conscious, nurturing home.</p>
+        </div>
+      </div>
+      
+      <!-- Grand card -->
+      <div class="bg-white border border-pink-100/70 rounded-3xl p-8 sm:p-12 text-center shadow-xl shadow-pink-900/5 relative overflow-hidden" data-aos="zoom-in">
+        <div class="absolute -right-10 -top-10 w-40 h-40 bg-pink-50 rounded-full blur-2xl pointer-events-none"></div>
+        <h3 class="text-2xl sm:text-3xl font-black mb-4 text-gray-900">ध्यान, संस्कार & सकारात्मक जीवनदृष्टी</h3>
+        <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8 text-sm sm:text-base">
+          Meditation, positive cultural imprinting, and a life-affirming worldview. This is a complete journey of transformation for mother, father, and the soul of the child about to enter this world.
+        </p>
+        <p class="text-xl sm:text-2xl font-black text-[#D37198]">💛 All set? Welcome aboard!</p>
+        <p class="text-gray-500 mt-2 leading-8 text-xs sm:text-sm font-medium">चला, प्रेम, ज्ञान आणि सकारात्मक ऊर्जेने भरलेल्या या प्रवासाला एकत्र सुरुवात करूया.</p>
+        <a href="/contact.html" class="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-[#E876A0] to-[#D37198] text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg shadow-pink-500/20 hover:scale-[1.03] transition-all">✈️ Register for नवपालवी</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MINI -->
+  <footer class="bg-gray-900 py-10 text-center text-gray-400 text-sm border-t border-gray-800">
+    <p class="text-gray-300 font-medium">© 2026 YogaNidra.co.in | नवपालवी Initiative by Rohini Bapat & Dr. Madhura Kulkarni</p>
+    <p class="mt-2 text-[#E876A0] italic font-bold">"यथाशक्ती निरंतर" 🙏</p>
+    <a href="index.html" class="mt-4 inline-block text-gray-500 hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider">← Back to YogaNidra.co.in</a>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919769464033?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20YogaNidra%20sessions." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-[#20ba59] transition-all flex items-center justify-center w-14 h-14" aria-label="Chat on WhatsApp">
+    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.788 2.016 14.316.99 11.993.99c-5.442 0-9.87 4.372-9.874 9.802-.001 1.768.472 3.49 1.37 5.031L2.24 21.092l5.407-1.417zM17.07 14.673c-.274-.137-1.62-.799-1.87-.891-.25-.092-.433-.137-.615.137-.183.275-.707.891-.867 1.074-.16.183-.32.206-.594.069-.273-.137-1.157-.426-2.202-1.359-.815-.728-1.365-1.627-1.526-1.901-.16-.274-.017-.422.12-.559.123-.123.274-.32.411-.48.137-.16.183-.274.274-.457.091-.183.046-.343-.023-.48-.069-.137-.615-1.486-.842-2.035-.22-.53-.443-.457-.615-.466-.16-.008-.343-.01-.525-.01-.183 0-.479.069-.73.343-.25.274-.958.937-.958 2.285 0 1.348.981 2.651 1.118 2.834.137.183 1.93 2.946 4.677 4.131.654.282 1.165.45 1.564.577.657.208 1.256.179 1.728.109.526-.078 1.62-.662 1.849-1.28.228-.617.228-1.143.16-1.28-.069-.137-.251-.22-.525-.357z"/>
+    </svg>
+  </a>
+
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
+  <!-- Multi-language support -->
+  <script src="lang.js"></script>
 </body>
 </html>
