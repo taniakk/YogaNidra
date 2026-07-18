@@ -59,39 +59,82 @@
 
 
     <!-- ================= NAVBAR START ================= -->
- <header id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-500 shadow-sm bg-[#D37198]">
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-[#D37198]/95 backdrop-blur-xl shadow-md transition-all duration-500">
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="max-w-[1400px] mx-auto px-5 lg:px-8">
 
         <div class="flex items-center justify-between h-20">
 
             <!-- Logo -->
-            <a href="/" id="logo" class="text-3xl font-bold text-white transition duration-300">
+            <a href="/" id="logo"
+                class="flex-shrink-0 text-3xl font-bold text-white tracking-wide transition duration-300">
                 YogaNidra
             </a>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center space-x-10">
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center flex-1 justify-end">
 
-                <a href="#home" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_home">Home</span></a>
-                <a href="#about" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_about">About Us</span></a>
-                <a href="#women" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_women">Women Wellness</span></a>
-                <a href="#iayt" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_therapy">Yoga Therapy</span></a>
-                <a href="#groups" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_join">Who can join</span></a>
-                <a href="navpalavi.html" class="nav-link text-white font-medium transition duration-300"><span data-lang="nav_navpalavi">Navpalavi</span></a>
+                <!-- Menu -->
+                <nav id="nav-menu" class="flex items-center space-x-7 xl:space-x-8 mr-8">
 
-                <!-- Language Switcher -->
-                <div id="lang-switcher-slot" class="nav-link "></div>
+                    <!-- Premium Underline Utility Classes applied via relative + group + pseudo spans -->
+                    <a href="#home" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_home">Home</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <!-- Contact CTA Button (Starts white with pink text) -->
-                <a href="/contact.html" id="contact-btn" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#D37198] bg-white hover:bg-purple-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
-                    <span data-lang="nav_contact">Contact Us</span>
-                </a>
+                    <a href="#about" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_about">About Us</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-            </nav>
+                    <a href="#women" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_women">Women Wellness</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-            <!-- Mobile Toggle Button -->
-            <button id="menu-btn" class="lg:hidden flex flex-col justify-center items-center gap-1.5 focus:outline-none">
+                    <a href="#iayt" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_therapy">Yoga Therapy</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
+
+                    <a href="#groups" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_join">Who can join</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
+
+                    <a href="navpalavi.html" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_navpalavi">Navpalavi</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
+
+                    <a href="/ourjourney.html" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_journey">Our Journey</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
+
+                </nav>
+
+                <!-- Right Side -->
+                <div class="flex items-center gap-4 flex-shrink-0">
+
+                    <!-- Language -->
+                    <div id="lang-switcher-slot"></div>
+
+                    <!-- Contact -->
+                    <a href="/contact.html"
+                        id="contact-btn"
+                        class="inline-flex items-center justify-center h-11 px-6 rounded-full bg-white text-[#D37198] font-semibold shadow border border-transparent transition-all duration-300 whitespace-nowrap transform hover:scale-105 hover:bg-pink-50">
+                        <span data-lang="nav_contact">Contact Us</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn"
+                class="lg:hidden flex flex-col justify-center items-center gap-1.5 z-50">
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
@@ -102,47 +145,99 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <div id="mobile-menu"
+        class="hidden lg:hidden bg-white border-t border-pink-100 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto">
 
         <nav class="flex flex-col px-6 py-6 space-y-5">
-
-            <a href="#home" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Home
+            <a href="#home" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_home">Home</span>
             </a>
-
-            <a href="#about" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                About Us
+            <a href="#about" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_about">About Us</span>
             </a>
-
-            <a href="#women" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Women Wellness
+            <a href="#women" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_women">Women Wellness</span>
             </a>
-
-            <a href="#iayt" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Yoga Therapy
+            <a href="#iayt" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_therapy">Yoga Therapy</span>
             </a>
-
-            <a href="#groups" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Who can join
+            <a href="#groups" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_join">Who can join</span>
             </a>
-
-            <a href="navpalavi.html" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Navpalavi
+            <a href="navpalavi.html" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_navpalavi">Navpalavi</span>
             </a>
-
+            <a href="/ourjourney.html" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_journey">Our Journey</span>
+            </a>
             
-          
+            <div id="mobile-lang-switcher-slot" class="pt-2"></div>
 
-            <!-- Mobile Menu Contact Block Trigger -->
-            <a href="/contact.html" class="inline-flex items-center justify-center w-full px-5 py-3 rounded-2xl text-base font-semibold text-white bg-[#E876A0] hover:bg-[#D37198] transition-all duration-300 text-center">
-                Contact Us
+            <a href="/contact.html"
+                class="inline-flex items-center justify-center w-full py-3 rounded-2xl bg-[#E876A0] text-white font-semibold hover:bg-[#D37198] transition">
+                <span data-lang="nav_contact">Contact Us</span>
             </a>
-
         </nav>
 
     </div>
 
 </header>
+
+<script>
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const logo = document.getElementById('logo');
+    const navLinks = document.querySelectorAll('#nav-menu .nav-link');
+    const contactBtn = document.getElementById('contact-btn');
+    const menuBtnSpans = document.querySelectorAll('#menu-btn span');
+
+    if (window.scrollY > 50) {
+        // Switch navbar wrapper background to white
+        navbar.classList.remove('bg-[#D37198]/95', 'text-white');
+        navbar.classList.add('bg-white/95', 'shadow-md');
+
+        // Darken logo text
+        logo.classList.remove('text-white');
+        logo.classList.add('text-[#D37198]');
+
+        // Links text becomes dark gray (The premium line color changes automatically using 'bg-current')
+        navLinks.forEach(link => {
+            link.classList.remove('text-white');
+            link.classList.add('text-gray-700', 'hover:text-gray-900');
+        });
+
+        // Contact button inversion style when on white layout
+        contactBtn.classList.remove('bg-white', 'text-[#D37198]', 'hover:bg-pink-50');
+        contactBtn.classList.add('bg-[#D37198]', 'text-white', 'hover:bg-[#E876A0]');
+
+        // Mobile burger stripes color adjustment
+        menuBtnSpans.forEach(span => {
+            span.classList.remove('bg-white');
+            span.classList.add('bg-[#D37198]');
+        });
+    } else {
+        // Restore initial pure-brand layout state
+        navbar.classList.remove('bg-white/95', 'shadow-md');
+        navbar.classList.add('bg-[#D37198]/95');
+
+        logo.classList.remove('text-[#D37198]');
+        logo.classList.add('text-white');
+
+        navLinks.forEach(link => {
+            link.classList.remove('text-gray-700', 'hover:text-gray-900');
+            link.classList.add('text-white');
+        });
+
+        contactBtn.classList.remove('bg-[#D37198]', 'text-white', 'hover:bg-[#E876A0]');
+        contactBtn.classList.add('bg-white', 'text-[#D37198]', 'hover:bg-pink-50');
+
+        menuBtnSpans.forEach(span => {
+            span.classList.remove('bg-[#D37198]');
+            span.classList.add('bg-white');
+        });
+    }
+});
+</script>
     <!-- ================= NAVBAR END ================= -->
 
 <!-- Header section -->
@@ -359,6 +454,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-- YOGA BASICS SECTION -->
 <section id="yoga-basics" class="relative py-24 overflow-hidden bg-white">
@@ -1057,6 +1154,67 @@
   </div>
 </section>
 
+<!-- honour -->
+<section class="bg-white py-20 px-6 md:px-12 lg:px-24 font-sans">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+    
+    <!-- LEFT COLUMN: Image Showcase -->
+    <div class="w-full lg:w-1/2">
+      <div class="relative group overflow-hidden rounded-3xl border border-gray-100 shadow-2xl transition-all duration-500 hover:shadow-3xl">
+        <!-- Replace src with your image path -->
+        <img src="/images/honour.jpeg" alt="YogaNidra with Gorkha Athletes" class="w-full h-[500px] md:h-[600px] object-cover transform transition-transform duration-700 group-hover:scale-[1.03]" />
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 text-white">
+          <span class="text-[#D37198] text-xs font-semibold tracking-widest uppercase block mb-2">Pure Presence</span>
+          <p class="text-sm italic opacity-90">"YogaNidra is the master Sadhana of relaxation undoubtedly."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: Elegant Storytelling Content -->
+    <div class="w-full lg:w-1/2 space-y-6 text-left">
+      <span class="text-[#D37198] text-xs font-semibold tracking-widest uppercase block mb-1">Reflections & Gratitude</span>
+      <h2 class="text-3xl md:text-4xl font-serif text-[#111827] leading-tight tracking-wide font-medium">
+        A Moment of Pure Presence <span class="text-2xl">🧘🏻‍♀️</span>
+      </h2>
+      <div class="w-20 h-1 bg-[#D37198] mb-6"></div>
+
+      <!-- Introduction paragraph -->
+      <p class="text-gray-700 text-base md:text-lg leading-relaxed font-medium">
+        Feeling blessed to get an opportunity to spend valuable moments with the young, energetic Gorkha athletes after previous YogaNidra sessions, coming all the way from small hilly regions close to Darjeeling. A must pause !!
+      </p>
+
+      <!-- Osho Wisdom Callout Box -->
+      <blockquote class="border-l-4 border-[#D37198] bg-gray-50 p-5 rounded-r-xl my-6">
+        <p class="text-gray-600 italic text-sm md:text-base leading-relaxed">
+          "How beautifully the great Osho revealed the 'pause' as the sacred, divine space between thoughts, actions, and life's processes. Entire emphasise to focus not on his words but the gap in between !!! Sincere efforts of the stubborn fickle mind to grasp that fraction moment of pause !!!"
+        </p>
+      </blockquote>
+
+      <!-- Core Philosophy text -->
+      <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+        A passing moment of pure presence where awareness arises. These minute gaps, between breaths or switching mood swings, are where the bliss lies, and real meditation begins. Prolonged staying in these pauses helps to realise the inner self and experience sereneness beyond thinking, pessimism, and overthinking—leading to inner awareness and transformation.
+      </p>
+
+      <!-- Marathon context & YogaNidra depth -->
+      <div class="pt-4 border-t border-gray-100 space-y-4">
+        <p class="text-gray-700 text-sm md:text-base font-medium flex items-center gap-2">
+          It’s worth relaxing for a few minutes after such a tiring hectic schedule of gruelling Mumbai Marathon running <span class="tracking-normal">🏃 🏃‍♀️ 🏃‍♂️</span>
+        </p>
+        
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+          A few minutes of YogaNidra is equal to several hours of sound sleep. Sleeping with awareness. Sleeping with the awakened state of mind. As if we are observing our own self, coming out of our own body. The witnessing attitude, such a beautiful concept, to see yourself as a third person, simple <span class="font-semibold text-[#111827]">साक्षीभाव</span>!!!
+        </p>
+      </div>
+
+      <!-- Finale Sign-off -->
+      <div class="bg-[#111827] text-white p-4 rounded-xl flex items-center justify-between shadow-md mt-6">
+        <span class="text-sm font-medium tracking-wide">A divine, positive resolve is the cherry 🍒 on the cake 🍰 !!!</span>
+        <span class="text-sm font-semibold text-[#D37198]">Enjoy the feast 🙌🏻</span>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 <!-- Filter + AOS Scripts -->
@@ -1407,7 +1565,7 @@
         </button>
         <div class="faq-content max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
           <div class="px-6 md:px-8 pb-6 text-gray-600 text-sm md:text-base leading-relaxed">
-            You can contact YogaNidra on <strong class="text-[#E876A0] font-semibold">+91-9876543210</strong> for enquiries, registrations, and course details.
+            You can contact YogaNidra on <strong class="text-[#E876A0] font-semibold">+91-9769464033</strong> for enquiries, registrations, and course details.
           </div>
         </div>
       </div>
@@ -1531,8 +1689,8 @@ function toggleFaq(button) {
           Quick Links
         </h4>
         <ul class="space-y-3.5 text-sm">
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Website</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Blogs</a></li>
+          <li><a href="/index.html" class="text-white/80 hover:text-white transition-colors duration-200">Website</a></li>
+          <li><a href="/navpalavi.html" class="text-white/80 hover:text-white transition-colors duration-200">Navpalavi</a></li>
         </ul>
       </div>
 
@@ -1542,9 +1700,9 @@ function toggleFaq(button) {
           Resources
         </h4>
         <ul class="space-y-3.5 text-sm">
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Home</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">About us</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Our Journey</a></li>
+          <li><a href="/index.html" class="text-white/80 hover:text-white transition-colors duration-200">Home</a></li>
+          <li><a href="/index.html#about" class="text-white/80 hover:text-white transition-colors duration-200">About us</a></li>
+          <li><a href="/index.html#groups" class="text-white/80 hover:text-white transition-colors duration-200">Who can join</a></li>
         </ul>
       </div>
 
@@ -1759,5 +1917,147 @@ window.addEventListener("scroll", () => {
 
 <!-- Multi-language support -->
 <script src="lang.js"></script>
+
+
+
+<!-- Registration Modal Container (Hidden by default) -->
+<div id="register-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    
+    <!-- Modal Box (Removed overflow-y-auto and restricted vertical footprint) -->
+    <div class="relative w-full max-w-2xl bg-white rounded-2xl shadow-2xl transform scale-95 transition-transform duration-300" id="modal-box">
+        
+        <!-- Compact Header -->
+        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+            <h3 class="text-lg font-bold text-gray-800">Free Registration</h3>
+            <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 p-1.5 rounded-lg hover:bg-gray-100 transition duration-200 cursor-pointer" aria-label="Close modal">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Body with zero scroll height and tighter padding -->
+        <div class="p-6">
+            <form onsubmit="handleRegister(event)" class="space-y-4">
+                
+                <!-- Row 1: Name & Phone -->
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Full Name *</label>
+                        <input type="text" id="reg-name" placeholder="Your full name" required 
+                            class="w-full px-3.5 py-2.5 bg-gray-50/50 border-2 border-pink-50 rounded-xl text-sm font-[inherit] text-gray-800 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-[#E876A0] focus:ring-4 focus:ring-pink-100/50 transition duration-200">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Phone Number *</label>
+                        <input type="tel" id="reg-phone" placeholder="+91 XXXXX XXXXX" required 
+                            class="w-full px-3.5 py-2.5 bg-gray-50/50 border-2 border-pink-50 rounded-xl text-sm font-[inherit] text-gray-800 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-[#E876A0] focus:ring-4 focus:ring-pink-100/50 transition duration-200">
+                    </div>
+                </div>
+                
+                <!-- Row 2: Email & Group -->
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Email Address *</label>
+                        <input type="email" id="reg-email" placeholder="your@email.com" required 
+                            class="w-full px-3.5 py-2.5 bg-gray-50/50 border-2 border-pink-50 rounded-xl text-sm font-[inherit] text-gray-800 placeholder-gray-400 focus:outline-none focus:bg-white focus:border-[#E876A0] focus:ring-4 focus:ring-pink-100/50 transition duration-200">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">I am a... *</label>
+                        <select id="reg-group" required 
+                            class="w-full px-3.5 py-2.5 bg-gray-50/50 border-2 border-pink-50 rounded-xl text-sm font-[inherit] text-gray-800 focus:outline-none focus:bg-white focus:border-[#E876A0] focus:ring-4 focus:ring-pink-100/50 transition duration-200 bg-white">
+                            <option value="">Select your group</option>
+                            <option>Pregnant Woman</option>
+                            <option>Woman with PCOD/PCOS</option>
+                            <option>Woman – Menstrual Issues</option>
+                            <option>Woman – Menopause</option>
+                            <option>Student</option>
+                            <option>Child (parent registering)</option>
+                            <option>Senior Citizen</option>
+                            <option>Athlete</option>
+                            <option>Doctor / Healthcare Professional</option>
+                            <option>Lawyer / Professional</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Row 3: Mode & Disclaimer (Now placed side-by-side to save a massive chunk of vertical space) -->
+                <div class="grid sm:grid-cols-2 gap-4 items-center">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-700 mb-1">Preferred Mode</label>
+                        <select id="reg-mode" 
+                            class="w-full px-3.5 py-2.5 bg-gray-50/50 border-2 border-pink-50 rounded-xl text-sm font-[inherit] text-gray-800 focus:outline-none focus:bg-white focus:border-[#E876A0] focus:ring-4 focus:ring-pink-100/50 transition duration-200 bg-white">
+                            <option>Online Sessions</option>
+                            <option>Offline Sessions</option>
+                            <option>Both</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-start gap-2 pt-4 sm:pt-4">
+                        <i class="ri-checkbox-circle-fill text-[#D37198] text-base mt-[-1px]"></i>
+                        <p class="text-[11px] text-gray-500 leading-normal">Registration is completely FREE. We will contact you within 48 hours to personalise your programme.</p>
+                    </div>
+                </div>
+                
+                <!-- Row 4: Submit Button -->
+                <button type="submit" 
+                    class="w-full bg-gradient-to-r from-[#E876A0] to-[#D37198] text-white py-3.5 rounded-xl font-bold text-base shadow-lg shadow-pink-500/20 hover:shadow-pink-500/30 hover:scale-[1.01] active:scale-[0.99] transition duration-200 cursor-pointer mt-2">
+                    Submit Free Registration
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+  // Function to open the popup with a smooth transition
+function openModal() {
+    const modal = document.getElementById('register-modal');
+    const modalBox = document.getElementById('modal-box');
+    
+    // Disable background page scrolling while popup is open
+    document.body.classList.add('overflow-hidden');
+    
+    // Trigger the fade-in and scale-up animation
+    modal.classList.remove('opacity-0', 'pointer-events-none');
+    modalBox.classList.remove('scale-95');
+}
+
+// Function to close the popup smoothly
+function closeModal() {
+    const modal = document.getElementById('register-modal');
+    const modalBox = document.getElementById('modal-box');
+    
+    // Enable scrolling again
+    document.body.classList.remove('overflow-hidden');
+    
+    // Fade out and scale down
+    modal.classList.add('opacity-0', 'pointer-events-none');
+    modalBox.classList.add('scale-95');
+}
+
+// Close the modal if the user clicks anywhere outside the form (on the dark background overlay)
+document.getElementById('register-modal').addEventListener('click', function(event) {
+    if (event.target === this) {
+        closeModal();
+    }
+});
+
+// Trigger the popup automatically after 3 seconds (3000 milliseconds)
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(openModal, 3000); // Change 3000 to 5000 if you want a 5-second delay instead
+});
+
+// Update your submit handler to auto-close the modal on successful submission
+function handleRegister(event) {
+    event.preventDefault();
+    
+    // Put your form processing logic here (API call, Google Sheets connection, etc.)
+    console.log("Form Submitted Successfully!");
+    
+    // Close the popup after submission
+    closeModal();
+}
+</script>
 </body>
 </html>

@@ -10,57 +10,85 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body class="text-gray-800 antialiased font-sans bg-gray-50/50">
-        <!-- ================= NAVBAR START ================= -->
- <header id="navbar" class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg transition-all duration-500 shadow-sm bg-[#D37198]">
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- ================= NAVBAR START ================= -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-[#D37198]/95 backdrop-blur-xl shadow-md transition-all duration-500">
+
+    <div class="max-w-[1400px] mx-auto px-5 lg:px-8">
 
         <div class="flex items-center justify-between h-20">
 
             <!-- Logo -->
-            <a href="/index.html" id="logo" class="text-3xl font-bold text-white transition duration-300">
+            <a href="/index.html" id="logo"
+                class="flex-shrink-0 text-3xl font-bold text-white tracking-wide transition duration-300">
                 YogaNidra
             </a>
 
-            <!-- Desktop Menu -->
-            <nav class="hidden lg:flex items-center space-x-10">
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center flex-1 justify-end">
 
-                <a href="/index.html#home" class="nav-link text-white font-medium transition duration-300">
-                    Home
-                </a>
+                <!-- Menu -->
+                <nav id="nav-menu" class="flex items-center space-x-7 xl:space-x-8 mr-8">
 
-                <a href="/index.html#about" class="nav-link text-white font-medium transition duration-300">
-                    About Us
-                </a>
+                    <!-- Premium Underline Utility Classes applied via relative + group + pseudo spans -->
+                    <a href="/index.html#home" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_home">Home</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <a href="/index.html#women" class="nav-link text-white font-medium transition duration-300">
-                    Women Wellness
-                </a>
+                    <a href="/index.html#about" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_about">About Us</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <a href="/index.html#iayt" class="nav-link text-white font-medium transition duration-300">
-                    Yoga Therapy
-                </a>
+                    <a href="/index.html#women" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_women">Women Wellness</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <a href="/index.html#groups" class="nav-link text-white font-medium transition duration-300">
-                    Who can join
-                </a>
+                    <a href="/index.html#iayt" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_therapy">Yoga Therapy</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <a href="/navpalavi.html" class="nav-link text-white font-medium transition duration-300">
-                    Navpalavi
-                </a>
+                    <a href="/index.html#groups" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_join">Who can join</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <!-- Language Switcher -->
-                <div id="lang-switcher-slot"></div>
+                    <a href="/navpalavi.html" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_navpalavi">Navpalavi</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-                <!-- Contact CTA Button (Starts white with pink text) -->
-                <a href="#contact" id="contact-btn" class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-[#D37198] bg-white hover:bg-purple-50 transition-all duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5">
-                    <span data-lang="nav_contact">Contact Us</span>
-                </a>
+                    <a href="/ourjourney.html" class="nav-link relative group text-white font-medium transition duration-300 whitespace-nowrap inline-block transform hover:scale-105 py-2">
+                        <span data-lang="nav_journey">Our Journey</span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-current transition-all duration-300 ease-out -translate-x-1/2 group-hover:w-full opacity-80"></span>
+                    </a>
 
-            </nav>
+                </nav>
 
-            <!-- Mobile Toggle Button -->
-            <button id="menu-btn" class="lg:hidden flex flex-col justify-center items-center gap-1.5 focus:outline-none">
+                <!-- Right Side -->
+                <div class="flex items-center gap-4 flex-shrink-0">
+
+                    <!-- Language -->
+                    <div id="lang-switcher-slot"></div>
+
+                    <!-- Contact -->
+                    <a href="/contact.html"
+                        id="contact-btn"
+                        class="inline-flex items-center justify-center h-11 px-6 rounded-full bg-white text-[#D37198] font-semibold shadow border border-transparent transition-all duration-300 whitespace-nowrap transform hover:scale-105 hover:bg-pink-50">
+                        <span data-lang="nav_contact">Contact Us</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menu-btn"
+                class="lg:hidden flex flex-col justify-center items-center gap-1.5 z-50">
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-7 h-0.5 bg-white transition-all duration-300"></span>
@@ -71,44 +99,99 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <div id="mobile-menu"
+        class="hidden lg:hidden bg-white border-t border-pink-100 shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto">
 
         <nav class="flex flex-col px-6 py-6 space-y-5">
-
-            <a href="/index.html#home" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Home
+            <a href="/index.html#home" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_home">Home</span>
             </a>
-
-            <a href="/index.html#about" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                About Us
+            <a href="/index.html#about" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_about">About Us</span>
             </a>
-
-            <a href="/index.html#women" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Women Wellness
+            <a href="/index.html#women" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_women">Women Wellness</span>
             </a>
-
-            <a href="/index.html#iayt" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Yoga Therapy
+            <a href="/index.html#iayt" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_therapy">Yoga Therapy</span>
             </a>
-
-            <a href="/index.html#groups" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Who can join
+            <a href="/index.html#groups" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_join">Who can join</span>
             </a>
-
-            <a href="/navpalavi.html" class="text-gray-700 font-medium hover:text-[#E876A0] transition">
-                Navpalavi
+            <a href="/navpalavi.html" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_navpalavi">Navpalavi</span>
             </a>
-
-            <!-- Mobile Menu Contact Block Trigger -->
-            <a href="#contact" class="inline-flex items-center justify-center w-full px-5 py-3 rounded-2xl text-base font-semibold text-white bg-[#E876A0] hover:bg-[#D37198] transition-all duration-300 text-center">
-                Contact Us
+            <a href="/ourjourney.html" class="text-gray-700 font-medium transition">
+                <span data-lang="nav_journey">Our Journey</span>
             </a>
+            
+            <div id="mobile-lang-switcher-slot" class="pt-2"></div>
 
+            <a href="/contact.html"
+                class="inline-flex items-center justify-center w-full py-3 rounded-2xl bg-[#E876A0] text-white font-semibold hover:bg-[#D37198] transition">
+                <span data-lang="nav_contact">Contact Us</span>
+            </a>
         </nav>
 
     </div>
 
 </header>
+
+<script>
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    const logo = document.getElementById('logo');
+    const navLinks = document.querySelectorAll('#nav-menu .nav-link');
+    const contactBtn = document.getElementById('contact-btn');
+    const menuBtnSpans = document.querySelectorAll('#menu-btn span');
+
+    if (window.scrollY > 50) {
+        // Switch navbar wrapper background to white
+        navbar.classList.remove('bg-[#D37198]/95', 'text-white');
+        navbar.classList.add('bg-white/95', 'shadow-md');
+
+        // Darken logo text
+        logo.classList.remove('text-white');
+        logo.classList.add('text-[#D37198]');
+
+        // Links text becomes dark gray (The premium line color changes automatically using 'bg-current')
+        navLinks.forEach(link => {
+            link.classList.remove('text-white');
+            link.classList.add('text-gray-700', 'hover:text-gray-900');
+        });
+
+        // Contact button inversion style when on white layout
+        contactBtn.classList.remove('bg-white', 'text-[#D37198]', 'hover:bg-pink-50');
+        contactBtn.classList.add('bg-[#D37198]', 'text-white', 'hover:bg-[#E876A0]');
+
+        // Mobile burger stripes color adjustment
+        menuBtnSpans.forEach(span => {
+            span.classList.remove('bg-white');
+            span.classList.add('bg-[#D37198]');
+        });
+    } else {
+        // Restore initial pure-brand layout state
+        navbar.classList.remove('bg-white/95', 'shadow-md');
+        navbar.classList.add('bg-[#D37198]/95');
+
+        logo.classList.remove('text-[#D37198]');
+        logo.classList.add('text-white');
+
+        navLinks.forEach(link => {
+            link.classList.remove('text-gray-700', 'hover:text-gray-900');
+            link.classList.add('text-white');
+        });
+
+        contactBtn.classList.remove('bg-[#D37198]', 'text-white', 'hover:bg-[#E876A0]');
+        contactBtn.classList.add('bg-white', 'text-[#D37198]', 'hover:bg-pink-50');
+
+        menuBtnSpans.forEach(span => {
+            span.classList.remove('bg-[#D37198]');
+            span.classList.add('bg-white');
+        });
+    }
+});
+</script>
     <!-- ================= NAVBAR END ================= -->
 
     <!-- Contact Section Container -->
@@ -279,8 +362,8 @@
           Quick Links
         </h4>
         <ul class="space-y-3.5 text-sm">
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Website</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Blogs</a></li>
+          <li><a href="/index.html" class="text-white/80 hover:text-white transition-colors duration-200">Website</a></li>
+          <li><a href="/navpalavi.html" class="text-white/80 hover:text-white transition-colors duration-200">Navpalavi</a></li>
         </ul>
       </div>
 
@@ -290,9 +373,9 @@
           Resources
         </h4>
         <ul class="space-y-3.5 text-sm">
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Home</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">About us</a></li>
-          <li><a href="#" class="text-white/80 hover:text-white transition-colors duration-200">Our Journey</a></li>
+          <li><a href="/index.html" class="text-white/80 hover:text-white transition-colors duration-200">Home</a></li>
+          <li><a href="/index.html#about" class="text-white/80 hover:text-white transition-colors duration-200">About us</a></li>
+          <li><a href="/index.html#groups" class="text-white/80 hover:text-white transition-colors duration-200">Who can join</a></li>
         </ul>
       </div>
 
