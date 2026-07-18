@@ -219,21 +219,21 @@ window.addEventListener('scroll', () => {
 
 
     <!-- sessions -->
-    <section class="bg-white py-20 px-6 md:px-12 lg:px-24 font-sans">
+<section class="bg-white py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 font-sans">
     <div class="max-w-7xl mx-auto">
 
         <!-- SECTION 1: WELCOME BANNER -->
-        <div class="mb-20 bg-gradient-to-r from-[#E876A0] to-[#D37198] rounded-3xl overflow-hidden shadow-2xl mt-10 flex flex-col md:flex-row items-center border border-[#D37198]/20">
-            <div class="w-full md:w-1/2 p-8 md:p-16 text-left">
+        <div class="mb-20 bg-gradient-to-r from-[#E876A0] to-[#D37198] rounded-3xl overflow-hidden shadow-2xl mt-5 md:mt-10 flex flex-col md:flex-row items-center border border-[#D37198]/20">
+            <div class="w-full md:w-1/2 p-6 sm:p-10 md:p-16 text-left">
                 <span class="text-white text-xs font-bold tracking-widest uppercase block mb-3 drop-shadow-sm">Your Journey Starts Here</span>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-tight mb-6 drop-shadow-sm">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-tight mb-6 drop-shadow-sm">
                     Warm welcome <span class="inline-block animate-bounce">🤗</span> to all!! <br class="hidden md:inline"/>Let’s make yoga a lifestyle <span class="text-pink-100">❣️</span>
                 </h2>
                 <p class="text-white/90 text-sm md:text-base max-w-md leading-relaxed">
                     Step into a dedicated space designed to harmonize mind, body, and spirit. Embracing yoga isn't just about a session—it's about reshaping daily rhythms.
                 </p>
             </div>
-            <div class="w-full md:w-1/2 h-80 md:h-[450px] relative group overflow-hidden">
+            <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[450px] relative group overflow-hidden">
                 <img src="/images/welcome.jpeg" alt="Welcoming Yoga Instructor" class="w-full h-full object-cover object-bottom transform transition-transform duration-700 group-hover:scale-105" />
                 <div class="absolute inset-0 bg-pink-900/10 transition-colors duration-500 group-hover:bg-transparent"></div>
             </div>
@@ -241,45 +241,44 @@ window.addEventListener('scroll', () => {
         
         <!-- SECTION 2: ONLINE GUIDANCE -->
         <div class="mb-20">
-    <h2 class="text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center gap-2 tracking-wide font-medium">
-        Online guidance sessions <span class="text-2xl">🧘🏻‍♀️</span>
-    </h2>
-    <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-8"></div>
-    
-    <!-- Removed hover:border-[#D37198]/30 to ensure no pink glow/shadow on hover -->
-    <div class="relative group overflow-hidden rounded-2xl border border-pink-50 shadow-xl w-full transition-all duration-500 hover:shadow-2xl">
-        <img src="/images/onlineguidance.jpeg" alt="Online Yoga Session via Zoom" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
-        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-            <p class="text-white text-sm tracking-widest uppercase font-medium">Interactive Digital Sanctuary</p>
-        </div>
-    </div>
-</div>
-
-        <!-- SECTION 3: OFFLINE PREMIUM STUDIO GALLERY -->
-        <div class="mb-24">
-            <h2 class="text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center gap-2 tracking-wide font-medium">
-                Offline guidance in spacious yoga studio <span class="text-2xl">🧘🏻‍♀️</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center flex-wrap gap-2 tracking-wide font-medium">
+                Online guidance sessions <span class="text-xl md:text-2xl">🧘🏻‍♀️</span>
             </h2>
             <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-8"></div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <div class="relative group overflow-hidden rounded-2xl border border-pink-50 shadow-xl w-full transition-all duration-500 hover:shadow-2xl">
+                <img src="/images/onlineguidance.jpeg" alt="Online Yoga Session via Zoom" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-4 md:p-6 bg-gradient-to-t from-black/30 via-transparent to-transparent">
+                    <p class="text-white text-xs md:text-sm tracking-widest uppercase font-medium">Interactive Digital Sanctuary</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: OFFLINE PREMIUM STUDIO GALLERY -->
+        <div class="mb-24">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center flex-wrap gap-2 tracking-wide font-medium">
+                Offline guidance in spacious yoga studio <span class="text-xl md:text-2xl">🧘🏻‍♀️</span>
+            </h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-8"></div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-start">
                 
                 <div class="group overflow-hidden rounded-2xl border border-pink-50 shadow-lg md:mt-4 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#D37198]/30">
-                    <img src="/images/session1.jpeg" alt="Spacious studio practice" class="w-full h-[350px] object-cover" />
+                    <img src="/images/session1.jpeg" alt="Spacious studio practice" class="w-full h-[260px] sm:h-[300px] md:h-[350px] object-cover" />
                     <div class="bg-white p-5 border-t border-pink-50">
                         <h4 class="text-sm font-semibold text-[#D37198] uppercase tracking-wider">Serene Ambiance</h4>
                     </div>
                 </div>
 
                 <div class="group overflow-hidden rounded-2xl border border-pink-50 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-3xl hover:border-[#D37198]/40">
-                    <img src="/images/session2.jpeg" alt="Group session inside studio" class="w-full h-[400px] object-cover" />
+                    <img src="/images/session2.jpeg" alt="Group session inside studio" class="w-full h-[280px] sm:h-[340px] md:h-[400px] object-cover" />
                     <div class="bg-white p-6 border-t border-pink-50">
                         <h4 class="text-base font-semibold text-[#D37198] uppercase tracking-wider">Collective Energy</h4>
                     </div>
                 </div>
 
-                <div class="group overflow-hidden rounded-2xl border border-pink-50 shadow-lg md:mt-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#D37198]/30">
-                    <img src="/images/session3.jpeg" alt="Guided open air studio environment" class="w-full h-[350px] object-cover" />
+                <div class="group overflow-hidden rounded-2xl border border-pink-50 shadow-lg sm:col-span-2 md:col-span-1 md:mt-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:border-[#D37198]/30">
+                    <img src="/images/session3.jpeg" alt="Guided open air studio environment" class="w-full h-[260px] sm:h-[300px] md:h-[350px] object-cover" />
                     <div class="bg-white p-5 border-t border-pink-50">
                         <h4 class="text-sm font-semibold text-[#D37198] uppercase tracking-wider">Dedicated Guidance</h4>
                     </div>
@@ -289,16 +288,16 @@ window.addEventListener('scroll', () => {
         </div>
 
         <!-- SECTION 4: INTERNATIONAL CONFERENCES -->
-        <div class="mb-24 animate-fade-in">
-            <h2 class="text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center gap-2 tracking-wide font-medium">
-                Participations in international conferences <span class="text-2xl">🤝</span>
+        <div class="mb-24">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center flex-wrap gap-2 tracking-wide font-medium">
+                Participations in international conferences <span class="text-xl md:text-2xl">🤝</span>
             </h2>
             <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-10"></div>
 
-            <div class="flex flex-col lg:flex-row items-stretch gap-10">
-                <div class="w-full lg:w-5/12 flex flex-col justify-center text-left">
+            <div class="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-10">
+                <div class="w-full lg:w-5/12 flex flex-col justify-center text-left order-2 lg:order-1">
                     <span class="text-[#D37198] text-xs font-semibold tracking-widest uppercase block mb-3">Global Exchange & Research</span>
-                    <h3 class="text-2xl md:text-3xl font-serif text-[#D37198] leading-snug mb-5 font-medium">
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-serif text-[#D37198] leading-snug mb-5 font-medium">
                         Bridging Ancient Wisdom & Modern Science
                     </h3>
                     <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
@@ -306,28 +305,28 @@ window.addEventListener('scroll', () => {
                     </p>
                     <div class="space-y-3.5">
                         <div class="flex items-start gap-3">
-                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text-xs">✓</span>
+                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] px-1.5 py-0.5 rounded-full text-xs">✓</span>
                             <p class="text-sm text-gray-700">Jointly collaborating with premier global entities like <strong class="text-[#D37198]">APPPAH (USA)</strong> and <strong class="text-[#D37198]">Manashakti Research Centre</strong>.</p>
                         </div>
                         <div class="flex items-start gap-3">
-                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text-xs">✓</span>
+                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] px-1.5 py-0.5 rounded-full text-xs">✓</span>
                             <p class="text-sm text-gray-700">Aligning with global wellness benchmarks supported by the <strong class="text-[#D37198]">Ministry of AYUSH</strong>.</p>
                         </div>
                         <div class="flex items-start gap-3">
-                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text-xs">✓</span>
+                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] px-1.5 py-0.5 rounded-full text-xs">✓</span>
                             <p class="text-sm text-gray-700">Deep-dive focuses on the critical <strong class="text-[#D37198]">"First 1000 Days of Life"</strong> framework.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full lg:w-7/12 relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl">
-                    <img src="/images/conference.jpeg" alt="2nd International Conference on Garbha Sanskar Presentation" class="w-full h-[400px] md:h-[500px] object-cover object-top transform transition-transform duration-700 group-hover:scale-[1.02]" />
+                <div class="w-full lg:w-7/12 relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl order-1 lg:order-2">
+                    <img src="/images/conference.jpeg" alt="2nd International Conference on Garbha Sanskar Presentation" class="w-full h-[280px] sm:h-[380px] md:h-[500px] object-cover object-top transform transition-transform duration-700 group-hover:scale-[1.02]" />
                     
-                    <div class="absolute bottom-5 left-5 right-5 bg-gradient-to-r from-[#E876A0]/95 to-[#D37198]/95 backdrop-blur-md rounded-2xl p-5 border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 bg-gradient-to-r from-[#E876A0]/95 to-[#D37198]/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <div>
-                            <p class="text-xs uppercase tracking-wider text-pink-100 font-bold mb-0.5">International Summit</p>
-                            <h4 class="text-white font-medium text-base">2nd International Conference on Garbha Sanskar (Prenatal Education)</h4>
-                            <p class="text-pink-50/80 text-xs mt-1">Theme: First 1000 Days of Life</p>
+                            <p class="text-[10px] uppercase tracking-wider text-pink-100 font-bold mb-0.5">International Summit</p>
+                            <h4 class="text-white font-medium text-xs sm:text-sm md:text-base">2nd International Conference on Garbha Sanskar (Prenatal Education)</h4>
+                            <p class="text-pink-50/80 text-[11px] mt-1">Theme: First 1000 Days of Life</p>
                         </div>
                         <div class="flex-shrink-0 bg-white/10 px-3 py-1.5 rounded-lg border border-white/20 text-center self-stretch sm:self-auto flex sm:flex-col justify-center items-center gap-1">
                             <span class="text-white font-bold text-xs block tracking-wide">AYUSH</span>
@@ -339,23 +338,23 @@ window.addEventListener('scroll', () => {
         </div>
 
         <!-- SECTION 5: SIGNAL SCHOOL CHILDREN -->
-        <div class="mb-24 animate-fade-in">
-            <h2 class="text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center gap-2 tracking-wide font-medium">
-                Yoga Sessions for the underprivileged signal school children of Thane <span class="text-2xl">👧🏻👦🏻</span>
+        <div class="mb-24">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center flex-wrap gap-2 tracking-wide font-medium">
+                Yoga Sessions for the underprivileged signal school children of Thane <span class="text-xl md:text-2xl">👧🏻👦🏻</span>
             </h2>
             <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-10"></div>
 
-            <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-6 md:gap-10">
                 
-                <div class="w-full bg-gradient-to-r from-[#E876A0]/5 to-[#D37198]/5 rounded-3xl p-6 md:p-8 border border-pink-50 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div class="w-full bg-gradient-to-r from-[#E876A0]/5 to-[#D37198]/5 rounded-3xl p-5 sm:p-6 md:p-8 border border-pink-50 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                     <div class="max-w-2xl text-left">
                         <span class="text-[#D37198] text-xs font-semibold tracking-widest uppercase block mb-2">Community Outreach</span>
-                        <h3 class="text-xl md:text-2xl font-serif text-[#D37198] mb-3 font-medium">Empowering Young Minds Through Mindful Practice</h3>
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-serif text-[#D37198] mb-3 font-medium">Empowering Young Minds Through Mindful Practice</h3>
                         <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                             Bringing the transforming gift of structural yoga to the street-side and underprivileged children of Thane's Signal Schools. These continuous social wellness initiatives are tailored to build focus, emotional equilibrium, and robust physical health where it is needed most.
                         </p>
                     </div>
-                    <div class="flex-shrink-0 space-y-2.5 w-full md:w-auto">
+                    <div class="flex-shrink-0 space-y-2.5 w-full md:w-auto border-t md:border-t-0 pt-4 md:pt-0 border-pink-100">
                         <div class="flex items-center gap-3">
                             <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text-[10px]">✓</span>
                             <p class="text-xs font-medium text-gray-700">Kid-friendly posture & breathing modules</p>
@@ -367,13 +366,13 @@ window.addEventListener('scroll', () => {
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 items-stretch">
                     <div class="relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-[#D37198]/30">
-                        <img src="/images/childeren.jpeg" alt="Yoga Session with Thane Signal School Children - Practice" class="w-full h-[380px] md:h-[440px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
+                        <img src="/images/childeren.jpeg" alt="Yoga Session with Thane Signal School Children - Practice" class="w-full h-[260px] sm:h-[340px] md:h-[440px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
                     </div>
 
                     <div class="relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-[#D37198]/30">
-                        <img src="/images/children2.jpeg" alt="Yoga Session with Thane Signal School Children - Engagement" class="w-full h-[380px] md:h-[440px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
+                        <img src="/images/children2.jpeg" alt="Yoga Session with Thane Signal School Children - Engagement" class="w-full h-[260px] sm:h-[340px] md:h-[440px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
                     </div>
                 </div>
 
@@ -381,16 +380,16 @@ window.addEventListener('scroll', () => {
         </div>
 
         <!-- SECTION 6: RADIO CHANNEL LIVE AWARENESS -->
-        <div class="mb-10 animate-fade-in">
-            <h2 class="text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center gap-2 tracking-wide font-medium">
-                YogaNidra awareness goes live on radio channel <span class="text-2xl">🎙️</span>
+        <div class="mb-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif text-[#D37198] mb-2 flex items-center flex-wrap gap-2 tracking-wide font-medium">
+                YogaNidra awareness goes live on radio channel <span class="text-xl md:text-2xl">🎙️</span>
             </h2>
             <div class="w-20 h-1 bg-gradient-to-r from-[#E876A0] to-[#D37198] mb-10"></div>
 
-            <div class="flex flex-col lg:flex-row items-stretch gap-10">
-                <div class="w-full lg:w-5/12 flex flex-col justify-center text-left">
+            <div class="flex flex-col lg:flex-row items-stretch gap-8 lg:gap-10">
+                <div class="w-full lg:w-5/12 flex flex-col justify-center text-left order-2 lg:order-1">
                     <span class="text-[#D37198] text-xs font-semibold tracking-widest uppercase block mb-3">Mass Media & Public Health</span>
-                    <h3 class="text-2xl md:text-3xl font-serif text-[#D37198] leading-snug mb-5 font-medium">
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-serif text-[#D37198] leading-snug mb-5 font-medium">
                         Spreading Wellness Over the Airwaves
                     </h3>
                     <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
@@ -398,7 +397,7 @@ window.addEventListener('scroll', () => {
                     </p>
                     <div class="space-y-3.5">
                         <div class="flex items-start gap-3">
-                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text-xs">✓</span>
+                            <span class="flex-shrink-0 text-white bg-gradient-to-r from-[#E876A0] to-[#D37198] p-1 rounded-full text Red-xs">✓</span>
                             <p class="text-sm text-gray-700">Broadcasting bite-sized stress reduction techniques for everyday life.</p>
                         </div>
                         <div class="flex items-start gap-3">
@@ -408,8 +407,8 @@ window.addEventListener('scroll', () => {
                     </div>
                 </div>
 
-                <div class="w-full lg:w-7/12 relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl hover:border-[#D37198]/30">
-                    <img src="/images/onradio.jpeg" alt="YogaNidra Awareness Live Broadcast" class="w-full h-[400px] md:h-[480px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
+                <div class="w-full lg:w-7/12 relative group rounded-3xl overflow-hidden border border-pink-50 shadow-xl transition-all duration-500 hover:shadow-2xl order-1 lg:order-2">
+                    <img src="/images/onradio.jpeg" alt="YogaNidra Awareness Live Broadcast" class="w-full h-[280px] sm:h-[380px] md:h-[480px] object-cover transform transition-transform duration-700 group-hover:scale-[1.02]" />
                 </div>
             </div>
         </div>
